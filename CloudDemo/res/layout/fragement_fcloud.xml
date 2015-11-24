@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/root_path"
+        android:id="@+id/textViewPath"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/back_dir"
+            android:id="@+id/textViewBackDir"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/make_dir"
+            android:id="@+id/textViewMakeDir"
+            android:layout_alignTop="@+id/textViewBackDir"
+            android:layout_toRightOf="@+id/textViewBackDir"
+            android:layout_marginLeft="16dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/more_opr"
+            android:id="@+id/textViewMoreOpr"
+            android:layout_alignTop="@+id/textViewMakeDir"
+            android:layout_toRightOf="@+id/textViewMakeDir"
+            android:layout_marginLeft="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/layoutUploadStatus"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/pause"
+            android:id="@+id/textViewPause"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/resume"
+            android:id="@+id/textViewResume"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textViewPause"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/cancel"
+            android:id="@+id/textViewCancel"
+            android:layout_alignTop="@+id/textViewResume"
+            android:layout_toRightOf="@+id/textViewResume"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/clear"
+            android:id="@+id/textViewClear"
+            android:layout_alignBottom="@+id/textViewCancel"
+            android:layout_toRightOf="@+id/textViewCancel"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="上传进度：0%"
+            android:id="@+id/textViewProgress"
+            android:layout_alignBottom="@+id/textViewClear"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewDirList"
+            android:layout_below="@+id/imageViewEmpty" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewEmpty"
+            android:src="@drawable/icon_empty"
+            android:layout_marginTop="97dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="没有文件"
+            android:id="@+id/textViewEmpty"
+            android:layout_below="@+id/imageViewEmpty"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

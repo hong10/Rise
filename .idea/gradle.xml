@@ -10,7 +10,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CloudDemo" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/testgithub" />
+            <option value="$PROJECT_DIR$/testjava" />
+            <option value="$PROJECT_DIR$/testmeminfodemo" />
           </set>
         </option>
       </GradleProjectSettings>

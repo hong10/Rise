@@ -1,0 +1,24 @@
+<project>
+
+    <property file="localgen.properties" />
+
+    <property name="version" value="${env.NumberVersion}" />
+
+    <property name="svn_version" value="${env.SVN_REVISION}" />
+
+    <xmlproperty collapseAttributes="true" file="AndroidManifest.xml" prefix="mymm" />
+
+    <property name="releaseapk" value="bin/cloudwns-demo-release-v${mymm.manifest.android:versionName}_${mymm.manifest.android:versionCode}_${svn_version}" />
+
+    <property name="debugapk" value="CloudDemo_${version}_${svn_version}_debug" />
+
+    <target name="-post-build" description="copying  apk" >
+
+        <echo level="info" > copying debug apk... </echo>
+
+        <copy file="bin/CloudDemo-debug.apk" tofile="bin/${debugapk}.apk" />
+
+        <copy file="bin/${debugapk}.apk" todir="../bin" />
+    </target>
+
+</project>

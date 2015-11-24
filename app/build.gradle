@@ -10,11 +10,27 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+
+        lintOptions {
+            abortOnError false
+        }
     }
+
+
+    signingConfigs {
+        myConfig {
+            storeFile file("a.jks")
+            storePassword "aaaaaa"
+            keyAlias "a"
+            keyPassword "aaaaaa"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.myConfig
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -23,4 +39,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
 }

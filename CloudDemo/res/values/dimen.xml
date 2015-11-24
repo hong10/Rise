@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_main">43.5dp</dimen>
+
+    <!-- 文字尺寸 -->
+    <dimen name="sp16">16sp</dimen>
+    
+    <!-- 常用dp -->
+    <dimen name="dp5">5dp</dimen>
+
+</resources>

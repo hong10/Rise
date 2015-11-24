@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewVideoPath"
+        android:layout_weight="0.04" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="文件属性："
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editTextFileAttr"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="视频标题："
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextVideoTitle"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="视频描述："
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextVideoDesc"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/btnUpdate"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout><!-- From: file:/E:/Rise/CloudDemo/res/layout/activity_video_update.xml -->
