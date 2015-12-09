@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/Rise/CloudDemo/res/values/color.xml -->
+    <!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml -->
     <eat-comment/>
     <color name="aliceblue">#F0F8FF</color>
     <color name="antiquewhite">#FAEBD7</color>
@@ -148,12 +148,12 @@
     <color name="white">#FFFFFF</color>
     <color name="whitesmoke">#F5F5F5</color>
     <color name="yellow">#FFFF00</color>
-    <!-- From: file:/E:/Rise/CloudDemo/res/values/dimen.xml -->
+    <!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/dimen.xml -->
     <eat-comment/>
     <dimen name="dp5">5dp</dimen>
     <dimen name="sp16">16sp</dimen>
     <dimen name="title_bar_main">43.5dp</dimen>
-    <!-- From: file:/E:/Rise/CloudDemo/res/values/strings.xml -->
+    <!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">图云</string>
     <string name="back_dir"><u>返回上层目录</u></string>
@@ -164,7 +164,7 @@
     <string name="pause"><u>暂停</u></string>
     <string name="resume"><u>恢复</u></string>
     <string name="root_path">/299201/ba/</string>
-    <!-- From: file:/E:/Rise/CloudDemo/res/values/styles.xml -->
+    <!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

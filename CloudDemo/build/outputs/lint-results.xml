@@ -9,11 +9,11 @@
         priority="6"
         summary="Missing `commit()` on `SharedPreference` editor"
         explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
-        errorLine1="     edit.commit();"
+        errorLine1="     edit.commit();"
         errorLine2="     ~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\common\BizService.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/common/BizService.java"
             line="291"
             column="6"/>
     </issue>
@@ -26,11 +26,11 @@
         priority="6"
         summary="Missing `commit()` on `SharedPreference` editor"
         explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
-        errorLine1="        edit.commit();"
+        errorLine1="        edit.commit();"
         errorLine2="        ~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\fclouldfragement\FClouldDataLayer.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/fclouldfragement/FClouldDataLayer.java"
             line="186"
             column="9"/>
     </issue>
@@ -47,10 +47,10 @@
 If you want the methods to just perform ASCII replacement, for example to convert an enum name, call `String#toUpperCase(Locale.US)` instead. If you really want to use the current locale, call `String#toUpperCase(Locale.getDefault())` instead."
         url="http://developer.android.com/reference/java/util/Locale.html#default_locale"
         urls="http://developer.android.com/reference/java/util/Locale.html#default_locale"
-        errorLine1="        String cgi = String.format(&quot;http://%s/tools/v1/getsign?secret_id=%s&amp;expired=%d&amp;appid=%s&amp;bucket=%s&quot;,"
+        errorLine1="        String cgi = String.format(&quot;http://%s/tools/v1/getsign?secret_id=%s&amp;expired=%d&amp;appid=%s&amp;bucket=%s&quot;,"
         errorLine2="                            ~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\common\UpdateSignTask.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/common/UpdateSignTask.java"
             line="104"
             column="29"/>
     </issue>
@@ -66,7 +66,7 @@ If you want the methods to just perform ASCII replacement, for example to conver
         errorLine1="    public FClouldFragement(FileType fileType) {"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\fclouldfragement\FClouldFragement.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/fclouldfragement/FClouldFragement.java"
             line="117"
             column="12"/>
     </issue>
@@ -83,11 +83,11 @@ If you want the methods to just perform ASCII replacement, for example to conver
 To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
         url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
         urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
-        errorLine1="        android:targetSdkVersion=&quot;16&quot; />"
+        errorLine1="        android:targetSdkVersion=&quot;16&quot; />"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\AndroidManifest.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/AndroidManifest.xml"
             line="8"
             column="9"/>
     </issue>
@@ -104,10 +104,10 @@ To fix this issue, set the `targetSdkVersion` to the highest available value. Th
 Therefore, you should either use the form of the SimpleDateFormat constructor where you pass in an explicit locale, such as Locale.US, or use one of the get instance methods, or suppress this error if really know what you are doing."
         url="http://developer.android.com/reference/java/text/SimpleDateFormat.html"
         urls="http://developer.android.com/reference/java/text/SimpleDateFormat.html"
-        errorLine1="        SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm&quot;);"
+        errorLine1="        SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm&quot;);"
         errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\common\Utils.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/common/Utils.java"
             line="31"
             column="32"/>
     </issue>
@@ -122,10 +122,10 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
         explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
         url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
         urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
-        errorLine1="      R.layout.view_aboutlist_item, null);"
+        errorLine1="      R.layout.view_aboutlist_item, null);"
         errorLine2="                                    ~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\AboutActivity.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/AboutActivity.java"
             line="105"
             column="37"/>
     </issue>
@@ -140,10 +140,10 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
         explanation="When inflating a layout, avoid passing in null as the parent view, since otherwise any layout parameters on the root of the inflated layout will be ignored."
         url="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
         urls="http://www.doubleencore.com/2013/05/layout-inflation-as-intended"
-        errorLine1="        View v = inflater.inflate(R.layout.fragment_upload, null);"
+        errorLine1="        View v = inflater.inflate(R.layout.fragment_upload, null);"
         errorLine2="                                                            ~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\BaseUploadFragment.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/BaseUploadFragment.java"
             line="59"
             column="61"/>
     </issue>
@@ -161,7 +161,7 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
         errorLine1="        mMakeDirDlgView = factory.inflate(R.layout.view_make_dir_dlg, null);"
         errorLine2="                                                                      ~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\fclouldfragement\FClouldFragement.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/fclouldfragement/FClouldFragement.java"
             line="293"
             column="71"/>
     </issue>
@@ -179,7 +179,7 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
         errorLine1="        mSetOptionDlgView = factory.inflate(R.layout.view_fcloud_option_dlg, null);"
         errorLine2="                                                                             ~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\fclouldfragement\FClouldFragement.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/fclouldfragement/FClouldFragement.java"
             line="296"
             column="78"/>
     </issue>
@@ -197,7 +197,7 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
         errorLine1="                convertView = getInflater().inflate(R.layout.view_dentry_list_item, null);"
         errorLine2="                                                                                    ~~~~">
         <location
-            file="E:\Rise\CloudDemo\src\com\tencent\cloud\demo\fragment\fclouldfragement\FClouldFragement.java"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/src/com/tencent/cloud/demo/fragment/fclouldfragement/FClouldFragement.java"
             line="1295"
             column="85"/>
     </issue>
@@ -214,11 +214,11 @@ Therefore, you should either use the form of the SimpleDateFormat constructor wh
 There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
         url="http://developer.android.com/training/multiscreen/screendensities.html"
         urls="http://developer.android.com/training/multiscreen/screendensities.html"
-        errorLine1="            android:textSize=&quot;18dp&quot; />"
+        errorLine1="            android:textSize=&quot;18dp&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_aboutlist_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_aboutlist_item.xml"
             line="21"
             column="13"/>
     </issue>
@@ -235,11 +235,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
 There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
         url="http://developer.android.com/training/multiscreen/screendensities.html"
         urls="http://developer.android.com/training/multiscreen/screendensities.html"
-        errorLine1="            android:textSize=&quot;16dp&quot; />"
+        errorLine1="            android:textSize=&quot;16dp&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_aboutlist_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_aboutlist_item.xml"
             line="35"
             column="13"/>
     </issue>
@@ -256,11 +256,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
 There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
         url="http://developer.android.com/training/multiscreen/screendensities.html"
         urls="http://developer.android.com/training/multiscreen/screendensities.html"
-        errorLine1="        android:textSize=&quot;18dp&quot; />"
+        errorLine1="        android:textSize=&quot;18dp&quot; />"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_dentry_list_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_dentry_list_item.xml"
             line="30"
             column="9"/>
     </issue>
@@ -277,11 +277,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
 There *are* cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
         url="http://developer.android.com/training/multiscreen/screendensities.html"
         urls="http://developer.android.com/training/multiscreen/screendensities.html"
-        errorLine1="        android:textSize=&quot;16dp&quot; />"
+        errorLine1="        android:textSize=&quot;16dp&quot; />"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_dentry_list_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_dentry_list_item.xml"
             line="44"
             column="9"/>
     </issue>
@@ -294,11 +294,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         priority="6"
         summary="Obsolete layout params"
         explanation="The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed."
-        errorLine1="        android:layout_centerHorizontal=&quot;true&quot;"
+        errorLine1="        android:layout_centerHorizontal=&quot;true&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="122"
             column="9"/>
     </issue>
@@ -311,11 +311,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         priority="6"
         summary="Obsolete layout params"
         explanation="The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed."
-        errorLine1="        android:layout_alignParentLeft=&quot;true&quot; />"
+        errorLine1="        android:layout_alignParentLeft=&quot;true&quot; />"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragement_fcloud.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragement_fcloud.xml"
             line="13"
             column="9"/>
     </issue>
@@ -328,11 +328,11 @@ There *are* cases where you might need to use `dp`; typically this happens when 
         priority="3"
         summary="Inefficient layout weight"
         explanation="When only a single widget in a LinearLayout defines a weight, it is more efficient to assign a width/height of `0dp` to it since it will absorb all the remaining space anyway. With a declared width/height of `0dp` it does not have to measure its own size first."
-        errorLine1="                android:layout_height=&quot;1dip&quot;"
+        errorLine1="                android:layout_height=&quot;1dip&quot;"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_main.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_main.xml"
             line="39"
             column="17"/>
     </issue>
@@ -352,10 +352,10 @@ If you want your custom background on multiple pages, then you should consider m
 
 Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.
 "
-        errorLine1="    android:background=&quot;@android:color/white&quot;"
+        errorLine1="    android:background=&quot;@android:color/white&quot;"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_download.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_download.xml"
             line="6"
             column="5"/>
     </issue>
@@ -368,10 +368,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFF&lt;/color>&lt;!--白色 -->"
+        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFF&lt;/color>&lt;!--白色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="3"
             column="12"/>
     </issue>
@@ -384,10 +384,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;ivory&quot;>#FFFFF0&lt;/color>&lt;!--象牙色 -->"
+        errorLine1="    &lt;color name=&quot;ivory&quot;>#FFFFF0&lt;/color>&lt;!--象牙色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="4"
             column="12"/>
     </issue>
@@ -400,10 +400,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightyellow&quot;>#FFFFE0&lt;/color>&lt;!--亮黄色 -->"
+        errorLine1="    &lt;color name=&quot;lightyellow&quot;>#FFFFE0&lt;/color>&lt;!--亮黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="5"
             column="12"/>
     </issue>
@@ -416,10 +416,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;yellow&quot;>#FFFF00&lt;/color>&lt;!--黄色 -->"
+        errorLine1="    &lt;color name=&quot;yellow&quot;>#FFFF00&lt;/color>&lt;!--黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="6"
             column="12"/>
     </issue>
@@ -432,10 +432,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;snow&quot;>#FFFAFA&lt;/color>&lt;!--雪白色 -->"
+        errorLine1="    &lt;color name=&quot;snow&quot;>#FFFAFA&lt;/color>&lt;!--雪白色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="7"
             column="12"/>
     </issue>
@@ -448,10 +448,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;floralwhite&quot;>#FFFAF0&lt;/color>&lt;!--花白色 -->"
+        errorLine1="    &lt;color name=&quot;floralwhite&quot;>#FFFAF0&lt;/color>&lt;!--花白色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="8"
             column="12"/>
     </issue>
@@ -464,10 +464,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lemonchiffon&quot;>#FFFACD&lt;/color>&lt;!--柠檬绸色 -->"
+        errorLine1="    &lt;color name=&quot;lemonchiffon&quot;>#FFFACD&lt;/color>&lt;!--柠檬绸色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="9"
             column="12"/>
     </issue>
@@ -480,10 +480,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;cornsilk&quot;>#FFF8DC&lt;/color>&lt;!--米绸色 -->"
+        errorLine1="    &lt;color name=&quot;cornsilk&quot;>#FFF8DC&lt;/color>&lt;!--米绸色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="10"
             column="12"/>
     </issue>
@@ -496,10 +496,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;seashell&quot;>#FFF5EE&lt;/color>&lt;!--海贝色 -->"
+        errorLine1="    &lt;color name=&quot;seashell&quot;>#FFF5EE&lt;/color>&lt;!--海贝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="11"
             column="12"/>
     </issue>
@@ -512,10 +512,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lavenderblush&quot;>#FFF0F5&lt;/color>&lt;!--淡紫红 -->"
+        errorLine1="    &lt;color name=&quot;lavenderblush&quot;>#FFF0F5&lt;/color>&lt;!--淡紫红 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="12"
             column="12"/>
     </issue>
@@ -528,10 +528,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;papayawhip&quot;>#FFEFD5&lt;/color>&lt;!--番木色 -->"
+        errorLine1="    &lt;color name=&quot;papayawhip&quot;>#FFEFD5&lt;/color>&lt;!--番木色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="13"
             column="12"/>
     </issue>
@@ -544,10 +544,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;blanchedalmond&quot;>#FFEBCD&lt;/color>&lt;!--白杏色 -->"
+        errorLine1="    &lt;color name=&quot;blanchedalmond&quot;>#FFEBCD&lt;/color>&lt;!--白杏色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="14"
             column="12"/>
     </issue>
@@ -560,10 +560,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mistyrose&quot;>#FFE4E1&lt;/color>&lt;!--浅玫瑰色 -->"
+        errorLine1="    &lt;color name=&quot;mistyrose&quot;>#FFE4E1&lt;/color>&lt;!--浅玫瑰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="15"
             column="12"/>
     </issue>
@@ -576,10 +576,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;bisque&quot;>#FFE4C4&lt;/color>&lt;!--桔黄色 -->"
+        errorLine1="    &lt;color name=&quot;bisque&quot;>#FFE4C4&lt;/color>&lt;!--桔黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="16"
             column="12"/>
     </issue>
@@ -592,10 +592,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;moccasin&quot;>#FFE4B5&lt;/color>&lt;!--鹿皮色 -->"
+        errorLine1="    &lt;color name=&quot;moccasin&quot;>#FFE4B5&lt;/color>&lt;!--鹿皮色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="17"
             column="12"/>
     </issue>
@@ -608,10 +608,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;navajowhite&quot;>#FFDEAD&lt;/color>&lt;!--纳瓦白 -->"
+        errorLine1="    &lt;color name=&quot;navajowhite&quot;>#FFDEAD&lt;/color>&lt;!--纳瓦白 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="18"
             column="12"/>
     </issue>
@@ -624,10 +624,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;peachpuff&quot;>#FFDAB9&lt;/color>&lt;!--桃色 -->"
+        errorLine1="    &lt;color name=&quot;peachpuff&quot;>#FFDAB9&lt;/color>&lt;!--桃色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="19"
             column="12"/>
     </issue>
@@ -640,10 +640,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;gold&quot;>#FFD700&lt;/color>&lt;!--金色 -->"
+        errorLine1="    &lt;color name=&quot;gold&quot;>#FFD700&lt;/color>&lt;!--金色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="20"
             column="12"/>
     </issue>
@@ -656,10 +656,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;pink&quot;>#FFC0CB&lt;/color>&lt;!--粉红色 -->"
+        errorLine1="    &lt;color name=&quot;pink&quot;>#FFC0CB&lt;/color>&lt;!--粉红色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="21"
             column="12"/>
     </issue>
@@ -672,10 +672,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightpink&quot;>#FFB6C1&lt;/color>&lt;!--亮粉红色 -->"
+        errorLine1="    &lt;color name=&quot;lightpink&quot;>#FFB6C1&lt;/color>&lt;!--亮粉红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="22"
             column="12"/>
     </issue>
@@ -688,10 +688,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;orange&quot;>#FFA500&lt;/color>&lt;!--橙色 -->"
+        errorLine1="    &lt;color name=&quot;orange&quot;>#FFA500&lt;/color>&lt;!--橙色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="23"
             column="12"/>
     </issue>
@@ -704,10 +704,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightsalmon&quot;>#FFA07A&lt;/color>&lt;!--亮肉色 -->"
+        errorLine1="    &lt;color name=&quot;lightsalmon&quot;>#FFA07A&lt;/color>&lt;!--亮肉色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="24"
             column="12"/>
     </issue>
@@ -720,10 +720,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkorange&quot;>#FF8C00&lt;/color>&lt;!--暗桔黄色 -->"
+        errorLine1="    &lt;color name=&quot;darkorange&quot;>#FF8C00&lt;/color>&lt;!--暗桔黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="25"
             column="12"/>
     </issue>
@@ -736,10 +736,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;coral&quot;>#FF7F50&lt;/color>&lt;!--珊瑚色 -->"
+        errorLine1="    &lt;color name=&quot;coral&quot;>#FF7F50&lt;/color>&lt;!--珊瑚色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="26"
             column="12"/>
     </issue>
@@ -752,10 +752,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;hotpink&quot;>#FF69B4&lt;/color>&lt;!--热粉红色 -->"
+        errorLine1="    &lt;color name=&quot;hotpink&quot;>#FF69B4&lt;/color>&lt;!--热粉红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="27"
             column="12"/>
     </issue>
@@ -768,10 +768,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;tomato&quot;>#FF6347&lt;/color>&lt;!--西红柿色 -->"
+        errorLine1="    &lt;color name=&quot;tomato&quot;>#FF6347&lt;/color>&lt;!--西红柿色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="28"
             column="12"/>
     </issue>
@@ -784,10 +784,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;orangered&quot;>#FF4500&lt;/color>&lt;!--红橙色 -->"
+        errorLine1="    &lt;color name=&quot;orangered&quot;>#FF4500&lt;/color>&lt;!--红橙色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="29"
             column="12"/>
     </issue>
@@ -800,10 +800,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;deeppink&quot;>#FF1493&lt;/color>&lt;!--深粉红色 -->"
+        errorLine1="    &lt;color name=&quot;deeppink&quot;>#FF1493&lt;/color>&lt;!--深粉红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="30"
             column="12"/>
     </issue>
@@ -816,10 +816,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;fuchsia&quot;>#FF00FF&lt;/color>&lt;!--紫红色 -->"
+        errorLine1="    &lt;color name=&quot;fuchsia&quot;>#FF00FF&lt;/color>&lt;!--紫红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="31"
             column="12"/>
     </issue>
@@ -832,10 +832,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;magenta&quot;>#FF00FF&lt;/color>&lt;!--红紫色 -->"
+        errorLine1="    &lt;color name=&quot;magenta&quot;>#FF00FF&lt;/color>&lt;!--红紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="32"
             column="12"/>
     </issue>
@@ -848,10 +848,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;red&quot;>#FF0000&lt;/color>&lt;!--红色 -->"
+        errorLine1="    &lt;color name=&quot;red&quot;>#FF0000&lt;/color>&lt;!--红色 -->"
         errorLine2="           ~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="33"
             column="12"/>
     </issue>
@@ -864,10 +864,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;oldlace&quot;>#FDF5E6&lt;/color>&lt;!--老花色 -->"
+        errorLine1="    &lt;color name=&quot;oldlace&quot;>#FDF5E6&lt;/color>&lt;!--老花色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="34"
             column="12"/>
     </issue>
@@ -880,10 +880,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightgoldenrodyellow&quot;>#FAFAD2&lt;/color>&lt;!--亮金黄色 -->"
+        errorLine1="    &lt;color name=&quot;lightgoldenrodyellow&quot;>#FAFAD2&lt;/color>&lt;!--亮金黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="35"
             column="12"/>
     </issue>
@@ -896,10 +896,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;linen&quot;>#FAF0E6&lt;/color>&lt;!--亚麻色 -->"
+        errorLine1="    &lt;color name=&quot;linen&quot;>#FAF0E6&lt;/color>&lt;!--亚麻色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="36"
             column="12"/>
     </issue>
@@ -912,10 +912,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;antiquewhite&quot;>#FAEBD7&lt;/color>&lt;!--古董白 -->"
+        errorLine1="    &lt;color name=&quot;antiquewhite&quot;>#FAEBD7&lt;/color>&lt;!--古董白 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="37"
             column="12"/>
     </issue>
@@ -928,10 +928,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;salmon&quot;>#FA8072&lt;/color>&lt;!--鲜肉色 -->"
+        errorLine1="    &lt;color name=&quot;salmon&quot;>#FA8072&lt;/color>&lt;!--鲜肉色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="38"
             column="12"/>
     </issue>
@@ -944,10 +944,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;ghostwhite&quot;>#F8F8FF&lt;/color>&lt;!--幽灵白 -->"
+        errorLine1="    &lt;color name=&quot;ghostwhite&quot;>#F8F8FF&lt;/color>&lt;!--幽灵白 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="39"
             column="12"/>
     </issue>
@@ -960,10 +960,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mintcream&quot;>#F5FFFA&lt;/color>&lt;!--薄荷色 -->"
+        errorLine1="    &lt;color name=&quot;mintcream&quot;>#F5FFFA&lt;/color>&lt;!--薄荷色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="40"
             column="12"/>
     </issue>
@@ -976,10 +976,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;whitesmoke&quot;>#F5F5F5&lt;/color>&lt;!--烟白色 -->"
+        errorLine1="    &lt;color name=&quot;whitesmoke&quot;>#F5F5F5&lt;/color>&lt;!--烟白色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="41"
             column="12"/>
     </issue>
@@ -992,10 +992,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;beige&quot;>#F5F5DC&lt;/color>&lt;!--米色 -->"
+        errorLine1="    &lt;color name=&quot;beige&quot;>#F5F5DC&lt;/color>&lt;!--米色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="42"
             column="12"/>
     </issue>
@@ -1008,10 +1008,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;wheat&quot;>#F5DEB3&lt;/color>&lt;!--浅黄色 -->"
+        errorLine1="    &lt;color name=&quot;wheat&quot;>#F5DEB3&lt;/color>&lt;!--浅黄色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="43"
             column="12"/>
     </issue>
@@ -1024,10 +1024,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;sandybrown&quot;>#F4A460&lt;/color>&lt;!--沙褐色 -->"
+        errorLine1="    &lt;color name=&quot;sandybrown&quot;>#F4A460&lt;/color>&lt;!--沙褐色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="44"
             column="12"/>
     </issue>
@@ -1040,10 +1040,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;azure&quot;>#F0FFFF&lt;/color>&lt;!--天蓝色 -->"
+        errorLine1="    &lt;color name=&quot;azure&quot;>#F0FFFF&lt;/color>&lt;!--天蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="45"
             column="12"/>
     </issue>
@@ -1056,10 +1056,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;honeydew&quot;>#F0FFF0&lt;/color>&lt;!--蜜色 -->"
+        errorLine1="    &lt;color name=&quot;honeydew&quot;>#F0FFF0&lt;/color>&lt;!--蜜色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="46"
             column="12"/>
     </issue>
@@ -1072,10 +1072,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;aliceblue&quot;>#F0F8FF&lt;/color>&lt;!--艾利斯兰 -->"
+        errorLine1="    &lt;color name=&quot;aliceblue&quot;>#F0F8FF&lt;/color>&lt;!--艾利斯兰 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="47"
             column="12"/>
     </issue>
@@ -1088,10 +1088,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;khaki&quot;>#F0E68C&lt;/color>&lt;!--黄褐色 -->"
+        errorLine1="    &lt;color name=&quot;khaki&quot;>#F0E68C&lt;/color>&lt;!--黄褐色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="48"
             column="12"/>
     </issue>
@@ -1104,10 +1104,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightcoral&quot;>#F08080&lt;/color>&lt;!--亮珊瑚色 -->"
+        errorLine1="    &lt;color name=&quot;lightcoral&quot;>#F08080&lt;/color>&lt;!--亮珊瑚色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="49"
             column="12"/>
     </issue>
@@ -1120,10 +1120,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;palegoldenrod&quot;>#EEE8AA&lt;/color>&lt;!--苍麒麟色 -->"
+        errorLine1="    &lt;color name=&quot;palegoldenrod&quot;>#EEE8AA&lt;/color>&lt;!--苍麒麟色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="50"
             column="12"/>
     </issue>
@@ -1136,10 +1136,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;violet&quot;>#EE82EE&lt;/color>&lt;!--紫罗兰色 -->"
+        errorLine1="    &lt;color name=&quot;violet&quot;>#EE82EE&lt;/color>&lt;!--紫罗兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="51"
             column="12"/>
     </issue>
@@ -1152,10 +1152,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darksalmon&quot;>#E9967A&lt;/color>&lt;!--暗肉色 -->"
+        errorLine1="    &lt;color name=&quot;darksalmon&quot;>#E9967A&lt;/color>&lt;!--暗肉色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="52"
             column="12"/>
     </issue>
@@ -1168,10 +1168,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lavender&quot;>#E6E6FA&lt;/color>&lt;!--淡紫色 -->"
+        errorLine1="    &lt;color name=&quot;lavender&quot;>#E6E6FA&lt;/color>&lt;!--淡紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="53"
             column="12"/>
     </issue>
@@ -1184,10 +1184,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightcyan&quot;>#E0FFFF&lt;/color>&lt;!--亮青色 -->"
+        errorLine1="    &lt;color name=&quot;lightcyan&quot;>#E0FFFF&lt;/color>&lt;!--亮青色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="54"
             column="12"/>
     </issue>
@@ -1200,10 +1200,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;burlywood&quot;>#DEB887&lt;/color>&lt;!--实木色 -->"
+        errorLine1="    &lt;color name=&quot;burlywood&quot;>#DEB887&lt;/color>&lt;!--实木色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="55"
             column="12"/>
     </issue>
@@ -1216,10 +1216,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;plum&quot;>#DDA0DD&lt;/color>&lt;!--洋李色 -->"
+        errorLine1="    &lt;color name=&quot;plum&quot;>#DDA0DD&lt;/color>&lt;!--洋李色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="56"
             column="12"/>
     </issue>
@@ -1232,10 +1232,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;gainsboro&quot;>#DCDCDC&lt;/color>&lt;!--淡灰色 -->"
+        errorLine1="    &lt;color name=&quot;gainsboro&quot;>#DCDCDC&lt;/color>&lt;!--淡灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="57"
             column="12"/>
     </issue>
@@ -1248,10 +1248,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;crimson&quot;>#DC143C&lt;/color>&lt;!--暗深红色 -->"
+        errorLine1="    &lt;color name=&quot;crimson&quot;>#DC143C&lt;/color>&lt;!--暗深红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="58"
             column="12"/>
     </issue>
@@ -1264,10 +1264,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;palevioletred&quot;>#DB7093&lt;/color>&lt;!--苍紫罗兰色 -->"
+        errorLine1="    &lt;color name=&quot;palevioletred&quot;>#DB7093&lt;/color>&lt;!--苍紫罗兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="59"
             column="12"/>
     </issue>
@@ -1280,10 +1280,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;goldenrod&quot;>#DAA520&lt;/color>&lt;!--金麒麟色 -->"
+        errorLine1="    &lt;color name=&quot;goldenrod&quot;>#DAA520&lt;/color>&lt;!--金麒麟色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="60"
             column="12"/>
     </issue>
@@ -1296,10 +1296,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;orchid&quot;>#DA70D6&lt;/color>&lt;!--淡紫色 -->"
+        errorLine1="    &lt;color name=&quot;orchid&quot;>#DA70D6&lt;/color>&lt;!--淡紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="61"
             column="12"/>
     </issue>
@@ -1312,10 +1312,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;thistle&quot;>#D8BFD8&lt;/color>&lt;!--蓟色 -->"
+        errorLine1="    &lt;color name=&quot;thistle&quot;>#D8BFD8&lt;/color>&lt;!--蓟色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="62"
             column="12"/>
     </issue>
@@ -1328,10 +1328,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightgray&quot;>#D3D3D3&lt;/color>&lt;!--亮灰色 -->"
+        errorLine1="    &lt;color name=&quot;lightgray&quot;>#D3D3D3&lt;/color>&lt;!--亮灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="63"
             column="12"/>
     </issue>
@@ -1344,10 +1344,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightgrey&quot;>#D3D3D3&lt;/color>&lt;!--亮灰色 -->"
+        errorLine1="    &lt;color name=&quot;lightgrey&quot;>#D3D3D3&lt;/color>&lt;!--亮灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="64"
             column="12"/>
     </issue>
@@ -1360,10 +1360,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;tan&quot;>#D2B48C&lt;/color>&lt;!--茶色 -->"
+        errorLine1="    &lt;color name=&quot;tan&quot;>#D2B48C&lt;/color>&lt;!--茶色 -->"
         errorLine2="           ~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="65"
             column="12"/>
     </issue>
@@ -1376,10 +1376,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;chocolate&quot;>#D2691E&lt;/color>&lt;!--巧可力色 -->"
+        errorLine1="    &lt;color name=&quot;chocolate&quot;>#D2691E&lt;/color>&lt;!--巧可力色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="66"
             column="12"/>
     </issue>
@@ -1392,10 +1392,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;peru&quot;>#CD853F&lt;/color>&lt;!--秘鲁色 -->"
+        errorLine1="    &lt;color name=&quot;peru&quot;>#CD853F&lt;/color>&lt;!--秘鲁色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="67"
             column="12"/>
     </issue>
@@ -1408,10 +1408,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;indianred&quot;>#CD5C5C&lt;/color>&lt;!--印第安红 -->"
+        errorLine1="    &lt;color name=&quot;indianred&quot;>#CD5C5C&lt;/color>&lt;!--印第安红 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="68"
             column="12"/>
     </issue>
@@ -1424,10 +1424,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumvioletred&quot;>#C71585&lt;/color>&lt;!--中紫罗兰色 -->"
+        errorLine1="    &lt;color name=&quot;mediumvioletred&quot;>#C71585&lt;/color>&lt;!--中紫罗兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="69"
             column="12"/>
     </issue>
@@ -1440,10 +1440,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;silver&quot;>#C0C0C0&lt;/color>&lt;!--银色 -->"
+        errorLine1="    &lt;color name=&quot;silver&quot;>#C0C0C0&lt;/color>&lt;!--银色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="70"
             column="12"/>
     </issue>
@@ -1456,10 +1456,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkkhaki&quot;>#BDB76B&lt;/color>&lt;!--暗黄褐色 -->"
+        errorLine1="    &lt;color name=&quot;darkkhaki&quot;>#BDB76B&lt;/color>&lt;!--暗黄褐色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="71"
             column="12"/>
     </issue>
@@ -1472,10 +1472,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;rosybrown&quot;>#BC8F8F&lt;/color>&lt;!--褐玫瑰红 -->"
+        errorLine1="    &lt;color name=&quot;rosybrown&quot;>#BC8F8F&lt;/color>&lt;!--褐玫瑰红 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="72"
             column="12"/>
     </issue>
@@ -1488,10 +1488,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumorchid&quot;>#BA55D3&lt;/color>&lt;!--中粉紫色 -->"
+        errorLine1="    &lt;color name=&quot;mediumorchid&quot;>#BA55D3&lt;/color>&lt;!--中粉紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="73"
             column="12"/>
     </issue>
@@ -1504,10 +1504,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkgoldenrod&quot;>#B8860B&lt;/color>&lt;!--暗金黄色 -->"
+        errorLine1="    &lt;color name=&quot;darkgoldenrod&quot;>#B8860B&lt;/color>&lt;!--暗金黄色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="74"
             column="12"/>
     </issue>
@@ -1520,10 +1520,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;firebrick&quot;>#B22222&lt;/color>&lt;!--火砖色 -->"
+        errorLine1="    &lt;color name=&quot;firebrick&quot;>#B22222&lt;/color>&lt;!--火砖色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="75"
             column="12"/>
     </issue>
@@ -1536,10 +1536,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;powderblue&quot;>#B0E0E6&lt;/color>&lt;!--粉蓝色 -->"
+        errorLine1="    &lt;color name=&quot;powderblue&quot;>#B0E0E6&lt;/color>&lt;!--粉蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="76"
             column="12"/>
     </issue>
@@ -1552,10 +1552,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightsteelblue&quot;>#B0C4DE&lt;/color>&lt;!--亮钢兰色 -->"
+        errorLine1="    &lt;color name=&quot;lightsteelblue&quot;>#B0C4DE&lt;/color>&lt;!--亮钢兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="77"
             column="12"/>
     </issue>
@@ -1568,10 +1568,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;paleturquoise&quot;>#AFEEEE&lt;/color>&lt;!--苍宝石绿 -->"
+        errorLine1="    &lt;color name=&quot;paleturquoise&quot;>#AFEEEE&lt;/color>&lt;!--苍宝石绿 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="78"
             column="12"/>
     </issue>
@@ -1584,10 +1584,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;greenyellow&quot;>#ADFF2F&lt;/color>&lt;!--黄绿色 -->"
+        errorLine1="    &lt;color name=&quot;greenyellow&quot;>#ADFF2F&lt;/color>&lt;!--黄绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="79"
             column="12"/>
     </issue>
@@ -1600,10 +1600,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightblue&quot;>#ADD8E6&lt;/color>&lt;!--亮蓝色 -->"
+        errorLine1="    &lt;color name=&quot;lightblue&quot;>#ADD8E6&lt;/color>&lt;!--亮蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="80"
             column="12"/>
     </issue>
@@ -1616,10 +1616,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkgray&quot;>#A9A9A9&lt;/color>&lt;!--暗灰色 -->"
+        errorLine1="    &lt;color name=&quot;darkgray&quot;>#A9A9A9&lt;/color>&lt;!--暗灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="81"
             column="12"/>
     </issue>
@@ -1632,10 +1632,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkgrey&quot;>#A9A9A9&lt;/color>&lt;!--暗灰色 -->"
+        errorLine1="    &lt;color name=&quot;darkgrey&quot;>#A9A9A9&lt;/color>&lt;!--暗灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="82"
             column="12"/>
     </issue>
@@ -1648,10 +1648,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;brown&quot;>#A52A2A&lt;/color>&lt;!--褐色 -->"
+        errorLine1="    &lt;color name=&quot;brown&quot;>#A52A2A&lt;/color>&lt;!--褐色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="83"
             column="12"/>
     </issue>
@@ -1664,10 +1664,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;sienna&quot;>#A0522D&lt;/color>&lt;!--赭色 -->"
+        errorLine1="    &lt;color name=&quot;sienna&quot;>#A0522D&lt;/color>&lt;!--赭色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="84"
             column="12"/>
     </issue>
@@ -1680,10 +1680,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkorchid&quot;>#9932CC&lt;/color>&lt;!--暗紫色 -->"
+        errorLine1="    &lt;color name=&quot;darkorchid&quot;>#9932CC&lt;/color>&lt;!--暗紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="85"
             column="12"/>
     </issue>
@@ -1696,10 +1696,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;palegreen&quot;>#98FB98&lt;/color>&lt;!--苍绿色 -->"
+        errorLine1="    &lt;color name=&quot;palegreen&quot;>#98FB98&lt;/color>&lt;!--苍绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="86"
             column="12"/>
     </issue>
@@ -1712,10 +1712,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkviolet&quot;>#9400D3&lt;/color>&lt;!--暗紫罗兰色 -->"
+        errorLine1="    &lt;color name=&quot;darkviolet&quot;>#9400D3&lt;/color>&lt;!--暗紫罗兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="87"
             column="12"/>
     </issue>
@@ -1728,10 +1728,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumpurple&quot;>#9370DB&lt;/color>&lt;!--中紫色 -->"
+        errorLine1="    &lt;color name=&quot;mediumpurple&quot;>#9370DB&lt;/color>&lt;!--中紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="88"
             column="12"/>
     </issue>
@@ -1744,10 +1744,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightgreen&quot;>#90EE90&lt;/color>&lt;!--亮绿色 -->"
+        errorLine1="    &lt;color name=&quot;lightgreen&quot;>#90EE90&lt;/color>&lt;!--亮绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="89"
             column="12"/>
     </issue>
@@ -1760,10 +1760,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkseagreen&quot;>#8FBC8F&lt;/color>&lt;!--暗海兰色 -->"
+        errorLine1="    &lt;color name=&quot;darkseagreen&quot;>#8FBC8F&lt;/color>&lt;!--暗海兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="90"
             column="12"/>
     </issue>
@@ -1776,10 +1776,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;saddlebrown&quot;>#8B4513&lt;/color>&lt;!--重褐色 -->"
+        errorLine1="    &lt;color name=&quot;saddlebrown&quot;>#8B4513&lt;/color>&lt;!--重褐色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="91"
             column="12"/>
     </issue>
@@ -1792,10 +1792,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkmagenta&quot;>#8B008B&lt;/color>&lt;!--暗洋红 -->"
+        errorLine1="    &lt;color name=&quot;darkmagenta&quot;>#8B008B&lt;/color>&lt;!--暗洋红 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="92"
             column="12"/>
     </issue>
@@ -1808,10 +1808,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkred&quot;>#8B0000&lt;/color>&lt;!--暗红色 -->"
+        errorLine1="    &lt;color name=&quot;darkred&quot;>#8B0000&lt;/color>&lt;!--暗红色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="93"
             column="12"/>
     </issue>
@@ -1824,10 +1824,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;blueviolet&quot;>#8A2BE2&lt;/color>&lt;!--紫罗兰蓝色 -->"
+        errorLine1="    &lt;color name=&quot;blueviolet&quot;>#8A2BE2&lt;/color>&lt;!--紫罗兰蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="94"
             column="12"/>
     </issue>
@@ -1840,10 +1840,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightskyblue&quot;>#87CEFA&lt;/color>&lt;!--亮天蓝色 -->"
+        errorLine1="    &lt;color name=&quot;lightskyblue&quot;>#87CEFA&lt;/color>&lt;!--亮天蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="95"
             column="12"/>
     </issue>
@@ -1856,10 +1856,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;skyblue&quot;>#87CEEB&lt;/color>&lt;!--天蓝色 -->"
+        errorLine1="    &lt;color name=&quot;skyblue&quot;>#87CEEB&lt;/color>&lt;!--天蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="96"
             column="12"/>
     </issue>
@@ -1872,10 +1872,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;gray&quot;>#808080&lt;/color>&lt;!--灰色 -->"
+        errorLine1="    &lt;color name=&quot;gray&quot;>#808080&lt;/color>&lt;!--灰色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="97"
             column="12"/>
     </issue>
@@ -1888,10 +1888,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;grey&quot;>#808080&lt;/color>&lt;!--灰色 -->"
+        errorLine1="    &lt;color name=&quot;grey&quot;>#808080&lt;/color>&lt;!--灰色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="98"
             column="12"/>
     </issue>
@@ -1904,10 +1904,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;olive&quot;>#808000&lt;/color>&lt;!--橄榄色 -->"
+        errorLine1="    &lt;color name=&quot;olive&quot;>#808000&lt;/color>&lt;!--橄榄色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="99"
             column="12"/>
     </issue>
@@ -1920,10 +1920,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;purple&quot;>#800080&lt;/color>&lt;!--紫色 -->"
+        errorLine1="    &lt;color name=&quot;purple&quot;>#800080&lt;/color>&lt;!--紫色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="100"
             column="12"/>
     </issue>
@@ -1936,10 +1936,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;maroon&quot;>#800000&lt;/color>&lt;!--粟色 -->"
+        errorLine1="    &lt;color name=&quot;maroon&quot;>#800000&lt;/color>&lt;!--粟色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="101"
             column="12"/>
     </issue>
@@ -1952,10 +1952,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;aquamarine&quot;>#7FFFD4&lt;/color>&lt;!--碧绿色 -->"
+        errorLine1="    &lt;color name=&quot;aquamarine&quot;>#7FFFD4&lt;/color>&lt;!--碧绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="102"
             column="12"/>
     </issue>
@@ -1968,10 +1968,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;chartreuse&quot;>#7FFF00&lt;/color>&lt;!--黄绿色 -->"
+        errorLine1="    &lt;color name=&quot;chartreuse&quot;>#7FFF00&lt;/color>&lt;!--黄绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="103"
             column="12"/>
     </issue>
@@ -1984,10 +1984,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lawngreen&quot;>#7CFC00&lt;/color>&lt;!--草绿色 -->"
+        errorLine1="    &lt;color name=&quot;lawngreen&quot;>#7CFC00&lt;/color>&lt;!--草绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="104"
             column="12"/>
     </issue>
@@ -2000,10 +2000,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumslateblue&quot;>#7B68EE&lt;/color>&lt;!--中暗蓝色 -->"
+        errorLine1="    &lt;color name=&quot;mediumslateblue&quot;>#7B68EE&lt;/color>&lt;!--中暗蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="105"
             column="12"/>
     </issue>
@@ -2016,10 +2016,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightslategray&quot;>#778899&lt;/color>&lt;!--亮蓝灰 -->"
+        errorLine1="    &lt;color name=&quot;lightslategray&quot;>#778899&lt;/color>&lt;!--亮蓝灰 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="106"
             column="12"/>
     </issue>
@@ -2032,10 +2032,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightslategrey&quot;>#778899&lt;/color>&lt;!--亮蓝灰 -->"
+        errorLine1="    &lt;color name=&quot;lightslategrey&quot;>#778899&lt;/color>&lt;!--亮蓝灰 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="107"
             column="12"/>
     </issue>
@@ -2048,10 +2048,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;slategray&quot;>#708090&lt;/color>&lt;!--灰石色 -->"
+        errorLine1="    &lt;color name=&quot;slategray&quot;>#708090&lt;/color>&lt;!--灰石色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="108"
             column="12"/>
     </issue>
@@ -2064,10 +2064,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;slategrey&quot;>#708090&lt;/color>&lt;!--灰石色 -->"
+        errorLine1="    &lt;color name=&quot;slategrey&quot;>#708090&lt;/color>&lt;!--灰石色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="109"
             column="12"/>
     </issue>
@@ -2080,10 +2080,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;olivedrab&quot;>#6B8E23&lt;/color>&lt;!--深绿褐色 -->"
+        errorLine1="    &lt;color name=&quot;olivedrab&quot;>#6B8E23&lt;/color>&lt;!--深绿褐色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="110"
             column="12"/>
     </issue>
@@ -2096,10 +2096,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;slateblue&quot;>#6A5ACD&lt;/color>&lt;!--石蓝色 -->"
+        errorLine1="    &lt;color name=&quot;slateblue&quot;>#6A5ACD&lt;/color>&lt;!--石蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="111"
             column="12"/>
     </issue>
@@ -2112,10 +2112,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;dimgray&quot;>#696969&lt;/color>&lt;!--暗灰色 -->"
+        errorLine1="    &lt;color name=&quot;dimgray&quot;>#696969&lt;/color>&lt;!--暗灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="112"
             column="12"/>
     </issue>
@@ -2128,10 +2128,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;dimgrey&quot;>#696969&lt;/color>&lt;!--暗灰色 -->"
+        errorLine1="    &lt;color name=&quot;dimgrey&quot;>#696969&lt;/color>&lt;!--暗灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="113"
             column="12"/>
     </issue>
@@ -2144,10 +2144,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumaquamarine&quot;>#66CDAA&lt;/color>&lt;!--中绿色 -->"
+        errorLine1="    &lt;color name=&quot;mediumaquamarine&quot;>#66CDAA&lt;/color>&lt;!--中绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="114"
             column="12"/>
     </issue>
@@ -2160,10 +2160,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;cornflowerblue&quot;>#6495ED&lt;/color>&lt;!--菊兰色 -->"
+        errorLine1="    &lt;color name=&quot;cornflowerblue&quot;>#6495ED&lt;/color>&lt;!--菊兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="115"
             column="12"/>
     </issue>
@@ -2176,10 +2176,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;cadetblue&quot;>#5F9EA0&lt;/color>&lt;!--军兰色 -->"
+        errorLine1="    &lt;color name=&quot;cadetblue&quot;>#5F9EA0&lt;/color>&lt;!--军兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="116"
             column="12"/>
     </issue>
@@ -2192,10 +2192,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkolivegreen&quot;>#556B2F&lt;/color>&lt;!--暗橄榄绿 -->"
+        errorLine1="    &lt;color name=&quot;darkolivegreen&quot;>#556B2F&lt;/color>&lt;!--暗橄榄绿 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="117"
             column="12"/>
     </issue>
@@ -2208,10 +2208,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;indigo&quot;>#4B0082&lt;/color>&lt;!--靛青色 -->"
+        errorLine1="    &lt;color name=&quot;indigo&quot;>#4B0082&lt;/color>&lt;!--靛青色 -->"
         errorLine2="           ~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="118"
             column="12"/>
     </issue>
@@ -2224,10 +2224,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumturquoise&quot;>#48D1CC&lt;/color>&lt;!--中绿宝石 -->"
+        errorLine1="    &lt;color name=&quot;mediumturquoise&quot;>#48D1CC&lt;/color>&lt;!--中绿宝石 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="119"
             column="12"/>
     </issue>
@@ -2240,10 +2240,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkslateblue&quot;>#483D8B&lt;/color>&lt;!--暗灰蓝色 -->"
+        errorLine1="    &lt;color name=&quot;darkslateblue&quot;>#483D8B&lt;/color>&lt;!--暗灰蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="120"
             column="12"/>
     </issue>
@@ -2256,10 +2256,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;steelblue&quot;>#4682B4&lt;/color>&lt;!--钢兰色 -->"
+        errorLine1="    &lt;color name=&quot;steelblue&quot;>#4682B4&lt;/color>&lt;!--钢兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="121"
             column="12"/>
     </issue>
@@ -2272,10 +2272,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;royalblue&quot;>#4169E1&lt;/color>&lt;!--皇家蓝 -->"
+        errorLine1="    &lt;color name=&quot;royalblue&quot;>#4169E1&lt;/color>&lt;!--皇家蓝 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="122"
             column="12"/>
     </issue>
@@ -2288,10 +2288,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;turquoise&quot;>#40E0D0&lt;/color>&lt;!--青绿色 -->"
+        errorLine1="    &lt;color name=&quot;turquoise&quot;>#40E0D0&lt;/color>&lt;!--青绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="123"
             column="12"/>
     </issue>
@@ -2304,10 +2304,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumseagreen&quot;>#3CB371&lt;/color>&lt;!--中海蓝 -->"
+        errorLine1="    &lt;color name=&quot;mediumseagreen&quot;>#3CB371&lt;/color>&lt;!--中海蓝 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="124"
             column="12"/>
     </issue>
@@ -2320,10 +2320,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;limegreen&quot;>#32CD32&lt;/color>&lt;!--橙绿色 -->"
+        errorLine1="    &lt;color name=&quot;limegreen&quot;>#32CD32&lt;/color>&lt;!--橙绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="125"
             column="12"/>
     </issue>
@@ -2336,10 +2336,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkslategray&quot;>#2F4F4F&lt;/color>&lt;!--暗瓦灰色 -->"
+        errorLine1="    &lt;color name=&quot;darkslategray&quot;>#2F4F4F&lt;/color>&lt;!--暗瓦灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="126"
             column="12"/>
     </issue>
@@ -2352,10 +2352,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkslategrey&quot;>#2F4F4F&lt;/color>&lt;!--暗瓦灰色 -->"
+        errorLine1="    &lt;color name=&quot;darkslategrey&quot;>#2F4F4F&lt;/color>&lt;!--暗瓦灰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="127"
             column="12"/>
     </issue>
@@ -2368,10 +2368,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;seagreen&quot;>#2E8B57&lt;/color>&lt;!--海绿色 -->"
+        errorLine1="    &lt;color name=&quot;seagreen&quot;>#2E8B57&lt;/color>&lt;!--海绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="128"
             column="12"/>
     </issue>
@@ -2384,10 +2384,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;forestgreen&quot;>#228B22&lt;/color>&lt;!--森林绿 -->"
+        errorLine1="    &lt;color name=&quot;forestgreen&quot;>#228B22&lt;/color>&lt;!--森林绿 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="129"
             column="12"/>
     </issue>
@@ -2400,10 +2400,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lightseagreen&quot;>#20B2AA&lt;/color>&lt;!--亮海蓝色 -->"
+        errorLine1="    &lt;color name=&quot;lightseagreen&quot;>#20B2AA&lt;/color>&lt;!--亮海蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="130"
             column="12"/>
     </issue>
@@ -2416,10 +2416,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;dodgerblue&quot;>#1E90FF&lt;/color>&lt;!--闪兰色 -->"
+        errorLine1="    &lt;color name=&quot;dodgerblue&quot;>#1E90FF&lt;/color>&lt;!--闪兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="131"
             column="12"/>
     </issue>
@@ -2432,10 +2432,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;midnightblue&quot;>#191970&lt;/color>&lt;!--中灰兰色 -->"
+        errorLine1="    &lt;color name=&quot;midnightblue&quot;>#191970&lt;/color>&lt;!--中灰兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="132"
             column="12"/>
     </issue>
@@ -2448,10 +2448,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;aqua&quot;>#00FFFF&lt;/color>&lt;!--浅绿色 -->"
+        errorLine1="    &lt;color name=&quot;aqua&quot;>#00FFFF&lt;/color>&lt;!--浅绿色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="133"
             column="12"/>
     </issue>
@@ -2464,10 +2464,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;cyan&quot;>#00FFFF&lt;/color>&lt;!--青色 -->"
+        errorLine1="    &lt;color name=&quot;cyan&quot;>#00FFFF&lt;/color>&lt;!--青色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="134"
             column="12"/>
     </issue>
@@ -2480,10 +2480,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;springgreen&quot;>#00FF7F&lt;/color>&lt;!--春绿色 -->"
+        errorLine1="    &lt;color name=&quot;springgreen&quot;>#00FF7F&lt;/color>&lt;!--春绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="135"
             column="12"/>
     </issue>
@@ -2496,10 +2496,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;lime&quot;>#00FF00&lt;/color>&lt;!--酸橙色 -->"
+        errorLine1="    &lt;color name=&quot;lime&quot;>#00FF00&lt;/color>&lt;!--酸橙色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="136"
             column="12"/>
     </issue>
@@ -2512,10 +2512,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumspringgreen&quot;>#00FA9A&lt;/color>&lt;!--中春绿色 -->"
+        errorLine1="    &lt;color name=&quot;mediumspringgreen&quot;>#00FA9A&lt;/color>&lt;!--中春绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="137"
             column="12"/>
     </issue>
@@ -2528,10 +2528,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkturquoise&quot;>#00CED1&lt;/color>&lt;!--暗宝石绿 -->"
+        errorLine1="    &lt;color name=&quot;darkturquoise&quot;>#00CED1&lt;/color>&lt;!--暗宝石绿 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="138"
             column="12"/>
     </issue>
@@ -2544,10 +2544,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;deepskyblue&quot;>#00BFFF&lt;/color>&lt;!--深天蓝色 -->"
+        errorLine1="    &lt;color name=&quot;deepskyblue&quot;>#00BFFF&lt;/color>&lt;!--深天蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="139"
             column="12"/>
     </issue>
@@ -2560,10 +2560,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkcyan&quot;>#008B8B&lt;/color>&lt;!--暗青色 -->"
+        errorLine1="    &lt;color name=&quot;darkcyan&quot;>#008B8B&lt;/color>&lt;!--暗青色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="140"
             column="12"/>
     </issue>
@@ -2576,10 +2576,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;teal&quot;>#008080&lt;/color>&lt;!--水鸭色 -->"
+        errorLine1="    &lt;color name=&quot;teal&quot;>#008080&lt;/color>&lt;!--水鸭色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="141"
             column="12"/>
     </issue>
@@ -2592,10 +2592,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;green&quot;>#008000&lt;/color>&lt;!--绿色 -->"
+        errorLine1="    &lt;color name=&quot;green&quot;>#008000&lt;/color>&lt;!--绿色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="142"
             column="12"/>
     </issue>
@@ -2608,10 +2608,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkgreen&quot;>#006400&lt;/color>&lt;!--暗绿色 -->"
+        errorLine1="    &lt;color name=&quot;darkgreen&quot;>#006400&lt;/color>&lt;!--暗绿色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="143"
             column="12"/>
     </issue>
@@ -2624,10 +2624,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;mediumblue&quot;>#0000CD&lt;/color>&lt;!--中兰色 -->"
+        errorLine1="    &lt;color name=&quot;mediumblue&quot;>#0000CD&lt;/color>&lt;!--中兰色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="145"
             column="12"/>
     </issue>
@@ -2640,10 +2640,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;darkblue&quot;>#00008B&lt;/color>&lt;!--暗蓝色 -->"
+        errorLine1="    &lt;color name=&quot;darkblue&quot;>#00008B&lt;/color>&lt;!--暗蓝色 -->"
         errorLine2="           ~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="146"
             column="12"/>
     </issue>
@@ -2656,10 +2656,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;navy&quot;>#000080&lt;/color>&lt;!--海军色 -->"
+        errorLine1="    &lt;color name=&quot;navy&quot;>#000080&lt;/color>&lt;!--海军色 -->"
         errorLine2="           ~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="147"
             column="12"/>
     </issue>
@@ -2672,10 +2672,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;color name=&quot;black&quot;>#000000&lt;/color>&lt;!--黑色 -->"
+        errorLine1="    &lt;color name=&quot;black&quot;>#000000&lt;/color>&lt;!--黑色 -->"
         errorLine2="           ~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\color.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/color.xml"
             line="148"
             column="12"/>
     </issue>
@@ -2688,10 +2688,10 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="3"
         summary="Unused resources"
         explanation="Unused resources make applications larger and slow down builds."
-        errorLine1="    &lt;dimen name=&quot;title_bar_main&quot;>43.5dp&lt;/dimen>"
+        errorLine1="    &lt;dimen name=&quot;title_bar_main&quot;>43.5dp&lt;/dimen>"
         errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="E:\Rise\CloudDemo\res\values\dimen.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/values/dimen.xml"
             line="3"
             column="12"/>
     </issue>
@@ -2704,11 +2704,11 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="2"
         summary="Useless parent layout"
         explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
-        errorLine1="    &lt;ScrollView"
+        errorLine1="    &lt;ScrollView"
         errorLine2="    ^"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="7"
             column="5"/>
     </issue>
@@ -2721,51 +2721,19 @@ Of course it&apos;s possible that your custom drawable is translucent and you wa
         priority="2"
         summary="Useless parent layout"
         explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
-        errorLine1="    &lt;RelativeLayout"
+        errorLine1="    &lt;RelativeLayout"
         errorLine2="    ^"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_aboutlist_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_aboutlist_item.xml"
             line="6"
             column="5"/>
     </issue>
 
     <issue
-        id="IconDensities"
-        severity="Warning"
-        message="Missing the following drawables in `drawable-mdpi`: ic_launcher.png, icon_dir.png, icon_empty.png, icon_file.png, icon_invalid.png... (3 more)"
-        category="Usability:Icons"
-        priority="4"
-        summary="Icon densities validation"
-        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.
-
-Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
-        url="http://developer.android.com/guide/practices/screens_support.html"
-        urls="http://developer.android.com/guide/practices/screens_support.html">
-        <location
-            file="E:\Rise\CloudDemo\res\drawable-mdpi"/>
-    </issue>
-
-    <issue
-        id="IconDensities"
-        severity="Warning"
-        message="Missing the following drawables in `drawable-xhdpi`: ic_launcher.png, icon_dir.png, icon_empty.png, icon_file.png, icon_invalid.png... (3 more)"
-        category="Usability:Icons"
-        priority="4"
-        summary="Icon densities validation"
-        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.
-
-Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
-        url="http://developer.android.com/guide/practices/screens_support.html"
-        urls="http://developer.android.com/guide/practices/screens_support.html">
-        <location
-            file="E:\Rise\CloudDemo\res\drawable-xhdpi"/>
-    </issue>
-
-    <issue
         id="IconMissingDensityFolder"
         severity="Warning"
-        message="Missing density variation folders in `res`: drawable-xxhdpi, drawable-xxxhdpi"
+        message="Missing density variation folders in `res`: drawable-mdpi, drawable-xhdpi, drawable-xxhdpi, drawable-xxxhdpi"
         category="Usability:Icons"
         priority="3"
         summary="Missing density folder"
@@ -2775,7 +2743,7 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         url="http://developer.android.com/guide/practices/screens_support.html"
         urls="http://developer.android.com/guide/practices/screens_support.html">
         <location
-            file="E:\Rise\CloudDemo\res"/>
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res"/>
     </issue>
 
     <issue
@@ -2788,10 +2756,10 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
         url="http://developer.android.com/design/building-blocks/buttons.html"
         urls="http://developer.android.com/design/building-blocks/buttons.html"
-        errorLine1="                    &lt;Button"
+        errorLine1="                    &lt;Button"
         errorLine2="                    ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="59"
             column="21"/>
     </issue>
@@ -2806,10 +2774,10 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
         url="http://developer.android.com/design/building-blocks/buttons.html"
         urls="http://developer.android.com/design/building-blocks/buttons.html"
-        errorLine1="                    &lt;Button"
+        errorLine1="                    &lt;Button"
         errorLine2="                    ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="66"
             column="21"/>
     </issue>
@@ -2824,10 +2792,10 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
         url="http://developer.android.com/design/building-blocks/buttons.html"
         urls="http://developer.android.com/design/building-blocks/buttons.html"
-        errorLine1="                    &lt;Button"
+        errorLine1="                    &lt;Button"
         errorLine2="                    ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="73"
             column="21"/>
     </issue>
@@ -2842,10 +2810,10 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
         url="http://developer.android.com/design/building-blocks/buttons.html"
         urls="http://developer.android.com/design/building-blocks/buttons.html"
-        errorLine1="                    &lt;Button"
+        errorLine1="                    &lt;Button"
         errorLine2="                    ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="80"
             column="21"/>
     </issue>
@@ -2860,10 +2828,10 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
         explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
         url="http://developer.android.com/design/building-blocks/buttons.html"
         urls="http://developer.android.com/design/building-blocks/buttons.html"
-        errorLine1="                    &lt;Button"
+        errorLine1="                    &lt;Button"
         errorLine2="                    ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="87"
             column="21"/>
     </issue>
@@ -2880,11 +2848,11 @@ Low density is not really used much anymore, so this check ignores the ldpi dens
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="45"
             column="9"/>
     </issue>
@@ -2901,11 +2869,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="67"
             column="9"/>
     </issue>
@@ -2922,11 +2890,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="89"
             column="9"/>
     </issue>
@@ -2943,11 +2911,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="111"
             column="9"/>
     </issue>
@@ -2964,11 +2932,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="50"
             column="9"/>
     </issue>
@@ -2985,11 +2953,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="        &lt;EditText"
+        errorLine1="        &lt;EditText"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="73"
             column="9"/>
     </issue>
@@ -3006,11 +2974,11 @@ If you really want to keep the text field generic, you can suppress this warning
 The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.
 
 If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
-        errorLine1="    &lt;EditText"
+        errorLine1="    &lt;EditText"
         errorLine2="    ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_make_dir_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_make_dir_dlg.xml"
             line="7"
             column="5"/>
     </issue>
@@ -3027,11 +2995,11 @@ If you really want to keep the text field generic, you can suppress this warning
 Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
 
 Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
+        errorLine1="    &lt;ImageView"
         errorLine2="    ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_download.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_download.xml"
             line="19"
             column="5"/>
     </issue>
@@ -3048,11 +3016,11 @@ Note that for text fields, you should not set both the `hint` and the `contentDe
 Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
 
 Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="        &lt;ImageView"
+        errorLine1="        &lt;ImageView"
         errorLine2="        ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragement_fcloud.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragement_fcloud.xml"
             line="116"
             column="9"/>
     </issue>
@@ -3069,11 +3037,11 @@ Note that for text fields, you should not set both the `hint` and the `contentDe
 Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
 
 Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="                &lt;ImageView"
+        errorLine1="                &lt;ImageView"
         errorLine2="                ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="22"
             column="17"/>
     </issue>
@@ -3090,11 +3058,11 @@ Note that for text fields, you should not set both the `hint` and the `contentDe
 Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore=&quot;ContentDescription&quot; attribute.
 
 Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`. See http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases."
-        errorLine1="    &lt;ImageView"
+        errorLine1="    &lt;ImageView"
         errorLine2="    ^"
         quickfix="studio,adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_dentry_list_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_dentry_list_item.xml"
             line="9"
             column="5"/>
     </issue>
@@ -3113,11 +3081,11 @@ Note that for text fields, you should not set both the `hint` and the `contentDe
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;进度&quot;/>"
+        errorLine1="            android:text=&quot;进度&quot;/>"
         errorLine2="            ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_download.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_download.xml"
             line="48"
             column="13"/>
     </issue>
@@ -3136,11 +3104,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;下载原图&quot;"
+        errorLine1="        android:text=&quot;下载原图&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_download.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_download.xml"
             line="54"
             column="9"/>
     </issue>
@@ -3159,11 +3127,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;下缩略图&quot;"
+        errorLine1="        android:text=&quot;下缩略图&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_download.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_download.xml"
             line="64"
             column="9"/>
     </issue>
@@ -3182,11 +3150,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;属性：&quot;"
+        errorLine1="        android:text=&quot;属性：&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_file_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_file_update.xml"
             line="17"
             column="9"/>
     </issue>
@@ -3205,11 +3173,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;更新&quot;"
+        errorLine1="        android:text=&quot;更新&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_file_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_file_update.xml"
             line="35"
             column="9"/>
     </issue>
@@ -3228,11 +3196,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;当前环境&quot;"
+        errorLine1="            android:text=&quot;当前环境&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="24"
             column="13"/>
     </issue>
@@ -3251,11 +3219,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;APPID：&quot; />"
+        errorLine1="            android:text=&quot;APPID：&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="43"
             column="13"/>
     </issue>
@@ -3274,11 +3242,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;FILE BUCKET：&quot; />"
+        errorLine1="            android:text=&quot;FILE BUCKET：&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="65"
             column="13"/>
     </issue>
@@ -3297,11 +3265,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;PHOTO BUCKET：&quot; />"
+        errorLine1="            android:text=&quot;PHOTO BUCKET：&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="87"
             column="13"/>
     </issue>
@@ -3320,11 +3288,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;VIDEO BUCKET：&quot; />"
+        errorLine1="            android:text=&quot;VIDEO BUCKET：&quot; />"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="109"
             column="13"/>
     </issue>
@@ -3343,11 +3311,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;确认&quot;"
+        errorLine1="        android:text=&quot;确认&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_sign.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_sign.xml"
             line="123"
             column="9"/>
     </issue>
@@ -3366,11 +3334,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;文件属性：&quot;"
+        errorLine1="            android:text=&quot;文件属性：&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="20"
             column="13"/>
     </issue>
@@ -3389,11 +3357,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;视频标题：&quot;"
+        errorLine1="            android:text=&quot;视频标题：&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="45"
             column="13"/>
     </issue>
@@ -3412,11 +3380,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;视频描述：&quot;"
+        errorLine1="            android:text=&quot;视频描述：&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="68"
             column="13"/>
     </issue>
@@ -3435,11 +3403,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;更新&quot;"
+        errorLine1="        android:text=&quot;更新&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\activity_video_update.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_video_update.xml"
             line="86"
             column="9"/>
     </issue>
@@ -3458,11 +3426,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;上传进度：0%&quot;"
+        errorLine1="            android:text=&quot;上传进度：0%&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragement_fcloud.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragement_fcloud.xml"
             line="99"
             column="13"/>
     </issue>
@@ -3481,11 +3449,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;没有文件&quot;"
+        errorLine1="            android:text=&quot;没有文件&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragement_fcloud.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragement_fcloud.xml"
             line="130"
             column="13"/>
     </issue>
@@ -3504,11 +3472,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;选择图片&quot; />"
+        errorLine1="                        android:text=&quot;选择图片&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="49"
             column="25"/>
     </issue>
@@ -3527,11 +3495,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;上传&quot; />"
+        errorLine1="                        android:text=&quot;上传&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="64"
             column="25"/>
     </issue>
@@ -3550,11 +3518,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;暂停&quot; />"
+        errorLine1="                        android:text=&quot;暂停&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="71"
             column="25"/>
     </issue>
@@ -3573,11 +3541,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;删除&quot; />"
+        errorLine1="                        android:text=&quot;删除&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="78"
             column="25"/>
     </issue>
@@ -3596,11 +3564,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;查询&quot; />"
+        errorLine1="                        android:text=&quot;查询&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="85"
             column="25"/>
     </issue>
@@ -3619,11 +3587,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                        android:text=&quot;复制&quot; />"
+        errorLine1="                        android:text=&quot;复制&quot; />"
         errorLine2="                        ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="92"
             column="25"/>
     </issue>
@@ -3642,11 +3610,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                    android:text=&quot;上传进度:0%&quot;"
+        errorLine1="                    android:text=&quot;上传进度:0%&quot;"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="110"
             column="21"/>
     </issue>
@@ -3665,11 +3633,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                    android:text=&quot;URL:&quot;"
+        errorLine1="                    android:text=&quot;URL:&quot;"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="120"
             column="21"/>
     </issue>
@@ -3688,11 +3656,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                    android:text=&quot;文件详情&quot;"
+        errorLine1="                    android:text=&quot;文件详情&quot;"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragment_upload.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragment_upload.xml"
             line="133"
             column="21"/>
     </issue>
@@ -3711,11 +3679,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;标题&quot;"
+        errorLine1="            android:text=&quot;标题&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_aboutlist_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_aboutlist_item.xml"
             line="19"
             column="13"/>
     </issue>
@@ -3734,11 +3702,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;内容&quot;"
+        errorLine1="            android:text=&quot;内容&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_aboutlist_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_aboutlist_item.xml"
             line="32"
             column="13"/>
     </issue>
@@ -3757,11 +3725,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;目录名称&quot;"
+        errorLine1="        android:text=&quot;目录名称&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_dentry_list_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_dentry_list_item.xml"
             line="28"
             column="9"/>
     </issue>
@@ -3780,11 +3748,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="        android:text=&quot;>&quot;"
+        errorLine1="        android:text=&quot;>&quot;"
         errorLine2="        ~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_dentry_list_item.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_dentry_list_item.xml"
             line="42"
             column="9"/>
     </issue>
@@ -3803,11 +3771,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;页面大小&quot;"
+        errorLine1="            android:text=&quot;页面大小&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="17"
             column="13"/>
     </issue>
@@ -3826,11 +3794,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;拉取内容&quot;"
+        errorLine1="            android:text=&quot;拉取内容&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="42"
             column="13"/>
     </issue>
@@ -3849,11 +3817,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;目录&quot;"
+        errorLine1="            android:text=&quot;目录&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="50"
             column="13"/>
     </issue>
@@ -3872,11 +3840,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;文件&quot;"
+        errorLine1="            android:text=&quot;文件&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="58"
             column="13"/>
     </issue>
@@ -3895,11 +3863,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;排序方式&quot;"
+        errorLine1="            android:text=&quot;排序方式&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="73"
             column="13"/>
     </issue>
@@ -3918,11 +3886,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                android:text=&quot;正序&quot;"
+        errorLine1="                android:text=&quot;正序&quot;"
         errorLine2="                ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="84"
             column="17"/>
     </issue>
@@ -3941,11 +3909,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="                android:text=&quot;逆序&quot;"
+        errorLine1="                android:text=&quot;逆序&quot;"
         errorLine2="                ~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="90"
             column="17"/>
     </issue>
@@ -3964,11 +3932,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;下载并发&quot;"
+        errorLine1="            android:text=&quot;下载并发&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="107"
             column="13"/>
     </issue>
@@ -3987,11 +3955,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;下载选项&quot;"
+        errorLine1="            android:text=&quot;下载选项&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="131"
             column="13"/>
     </issue>
@@ -4010,11 +3978,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;HTTP长连接&quot;"
+        errorLine1="            android:text=&quot;HTTP长连接&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="139"
             column="13"/>
     </issue>
@@ -4033,11 +4001,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;HTTP断点续传&quot;"
+        errorLine1="            android:text=&quot;HTTP断点续传&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="147"
             column="13"/>
     </issue>
@@ -4056,11 +4024,11 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
 * The application cannot be translated to other languages by just adding new translations for existing string resources.
 
 In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
-        errorLine1="            android:text=&quot;清除下载缓存&quot;"
+        errorLine1="            android:text=&quot;清除下载缓存&quot;"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
         quickfix="adt">
         <location
-            file="E:\Rise\CloudDemo\res\layout\view_fcloud_option_dlg.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_fcloud_option_dlg.xml"
             line="155"
             column="13"/>
     </issue>
@@ -4073,10 +4041,10 @@ In Android Studio and Eclipse there are quickfixes to automatically extract this
         priority="3"
         summary="Overlapping items in RelativeLayout"
         explanation="If relative layout has text or button items aligned to left and right sides they can overlap each other due to localized text expansion unless they have mutual constraints like `toEndOf`/`toStartOf`."
-        errorLine1="        &lt;TextView"
+        errorLine1="        &lt;TextView"
         errorLine2="        ^">
         <location
-            file="E:\Rise\CloudDemo\res\layout\fragement_fcloud.xml"
+            file="/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/fragement_fcloud.xml"
             line="85"
             column="9"/>
     </issue>

@@ -8,4 +8,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextDirName" />
-</RelativeLayout><!-- From: file:/E:/Rise/CloudDemo/res/layout/view_make_dir_dlg.xml -->
+</RelativeLayout><!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/view_make_dir_dlg.xml -->

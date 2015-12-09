@@ -12,4 +12,4 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/textViewStat"
         android:layout_gravity="center_horizontal" />
-</LinearLayout><!-- From: file:/E:/Rise/CloudDemo/res/layout/activity_stat.xml -->
+</LinearLayout><!-- From: file:/home/hong/AndroidStudioProjects/Rise/CloudDemo/res/layout/activity_stat.xml -->
