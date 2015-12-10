@@ -2,6 +2,7 @@
 <items version="2" >
 
     <item
+<<<<<<< HEAD
         jar="E:\Rise\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -126,6 +127,132 @@
         revision="23.0.2"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
         <dex dex="E:\Rise\testmeminfodemo\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-b3bea06a79b12c8bda874a4a2b0badbd5cfcdcfd.jar" />
+=======
+        jar="/home/hong/AndroidStudioProjects/Rise/CloudDemo/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e4e879d0b3dc11f2feb3f55e77e3b5bd82c4a28">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/CloudDemo/build/intermediates/pre-dexed/debug/android-support-v4-9042456253b48a4ecda66825f9681f958a50908f.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/pre-dexed/debug/classes-0f9bd10a892686b82a99988cec18f8f38253389c.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/CloudDemo/libs/upload_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6094895e38a9c67cbc15bfa5feb2b6ae96e2e206">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/CloudDemo/build/intermediates/pre-dexed/debug/upload_1.1.3.19_3996-a11249c08393955fb47d15ac04a68c49f0c8fac3.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/classes-b41da640251dc26d1e0807b8a150a1632c24f8ab.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/classes-bb2d41635979dd71cac039e8ff1c9a03ef6d7726.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-e881ae0e52d309cad0275e68d409b4b3a718a418.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-648e33cc1e3f88070c14f53619b45065b4c11645.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/CloudDemo/libs/download_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1ff6002dd28219918da6eb9937674da37c2bca2a">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/CloudDemo/build/intermediates/pre-dexed/debug/download_1.1.3.19_3996-df1aeb1aa0b5e2df6e5af544b836459a153476c9.jar" />
+    </item>
+    <item
+        jar="/home/hong/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-2c53da55e0f72d392ab85dc892bd1cbbdbe27447.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-1ef7daa4f61b8efd9868151920e896fa6775d2b9.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/pre-dexed/debug/classes-c990f3324c31cc01ece2ce985111806581ef8ca7.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/pre-dexed/debug/classes-c7e0524b016b6d8b4977c43f7f70f458460a4130.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/CloudDemo/libs/wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="934e220d321b27272ff107393ca45b56b5362fe4">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/CloudDemo/build/intermediates/pre-dexed/debug/wup-1.0.0-SNAPSHOT-dcba6d1e5aaefe90cae14e66e68d51e04c2cd7e6.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/app/libs/download_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ff6002dd28219918da6eb9937674da37c2bca2a">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/download_1.1.3.19_3996-d1ca2311c8a0c1c68de61b0fe28717cc7cf2559b.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testgithub/build/intermediates/pre-dexed/debug/classes-4a441029390e7a5c4175fa4ddc12757fc33b8bce.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/classes-adaee8e95bee6f20058da349f959935f4f2e7a3e.jar" />
+    </item>
+    <item
+        jar="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/testmeminfodemo/build/intermediates/pre-dexed/debug/classes-3c684b465beebc0b29bff0d4dd69509dfb0545d5.jar" />
+    </item>
+    <item
+        jar="/home/hong/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/home/hong/AndroidStudioProjects/Rise/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-4b9801aa3c7d5364d9985aa59965b745f2bc9b26.jar" />
+>>>>>>> 99b1f2a922418d969df9d641946d8a50e4baa9a8
     </item>
 
 </items>
