@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Rise\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-299e160e1472a10510d31640820482c55fe69e11.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testgithub\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\Rise\testgithub\build\intermediates\pre-dexed\debug\classes-5ffcab2987c9e59cd15293b0d3bcac9c824289c4.jar" />
+    </item>
+    <item
+        jar="E:\Rise\CloudDemo\libs\upload_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6094895e38a9c67cbc15bfa5feb2b6ae96e2e206">
+        <dex dex="E:\Rise\CloudDemo\build\intermediates\pre-dexed\debug\upload_1.1.3.19_3996-2df5580fcbc2baf50174e9d31d03027ade0f7143.jar" />
+    </item>
+    <item
+        jar="G:\android_dev\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-d1d04ad4601bb11c2a5bb9fc96d1b6fd8b12a4c5.jar" />
+    </item>
+    <item
+        jar="E:\Rise\CloudDemo\libs\download_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1ff6002dd28219918da6eb9937674da37c2bca2a">
+        <dex dex="E:\Rise\CloudDemo\build\intermediates\pre-dexed\debug\download_1.1.3.19_3996-20dda878d89101136fa11d283bd505d7ece811b7.jar" />
+    </item>
+    <item
+        jar="G:\android_dev\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="E:\Rise\testmeminfodemo\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-364156abb6dacfdc359ce61c04b8d3a948f07bdc.jar" />
+    </item>
+    <item
+        jar="E:\Rise\app\libs\download_1.1.3.19_3996.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1ff6002dd28219918da6eb9937674da37c2bca2a">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\download_1.1.3.19_3996-7f07f187645ac0d69bf8bd1c3ec6ba76586a848b.jar" />
+    </item>
+    <item
+        jar="E:\Rise\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\classes-3e33cb42c987120d26ab08f63c1bff55a4b0df97.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testmeminfodemo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="E:\Rise\testmeminfodemo\build\intermediates\pre-dexed\debug\classes-53c39d80b2cea5c63d620c0d84f54e118472445e.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testgithub\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\Rise\testgithub\build\intermediates\pre-dexed\debug\classes-652accfab988a31b75dda516c429252d894b1887.jar" />
+    </item>
+    <item
+        jar="E:\Rise\CloudDemo\libs\wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="934e220d321b27272ff107393ca45b56b5362fe4">
+        <dex dex="E:\Rise\CloudDemo\build\intermediates\pre-dexed\debug\wup-1.0.0-SNAPSHOT-b51b8330ee831cdb0ac38ac726f4e43ee6c8cb98.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testmeminfodemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="E:\Rise\testmeminfodemo\build\intermediates\pre-dexed\debug\classes-bd159dec34168ad54bc4445b38eb65d2bb1453a7.jar" />
+    </item>
+    <item
+        jar="E:\Rise\CloudDemo\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e4e879d0b3dc11f2feb3f55e77e3b5bd82c4a28">
+        <dex dex="E:\Rise\CloudDemo\build\intermediates\pre-dexed\debug\android-support-v4-92a8e6426446d292715102cd3a52275fbef21838.jar" />
+    </item>
+    <item
+        jar="E:\Rise\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\classes-d60241a2659753d5929f3c228aea37e100c31224.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testgithub\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="E:\Rise\testgithub\build\intermediates\pre-dexed\debug\classes-7823391c5b95c0acd384c62c0b6587f2de3064b4.jar" />
+    </item>
+    <item
+        jar="E:\Rise\app\build\intermediates\exploded-aar\com.android.support\design\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="E:\Rise\app\build\intermediates\pre-dexed\debug\classes-f752590f3a0cbfe73f4210b8506a62b2bd8d1668.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testgithub\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="E:\Rise\testgithub\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-7de94a3e9f665f7db227285dd0082b2cca5548d8.jar" />
+    </item>
+    <item
+        jar="E:\Rise\testmeminfodemo\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="E:\Rise\testmeminfodemo\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-b3bea06a79b12c8bda874a4a2b0badbd5cfcdcfd.jar" />
+    </item>
+
+</items>
