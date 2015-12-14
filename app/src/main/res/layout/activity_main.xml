@@ -23,5 +23,11 @@
         android:onClick="rotateImage"
         android:text="缩放旋转图片" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="netImage"
+        android:text="网络加载图片" />
+
 
 </LinearLayout>

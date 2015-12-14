@@ -24,4 +24,10 @@ public class MainActivity extends Activity {
         startActivity(intent);
 
     }
+
+    public void netImage(View view) {
+        Intent intent = new Intent(this, LoadPicFromNetActivity.class);
+        startActivity(intent);
+
+    }
 }
