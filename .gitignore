@@ -11,6 +11,11 @@
 # generated files
 bin/
 gen/
+build/
+
+CloudDemo/build
+CloudDemo/.idea
+CloudDemo/gen
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -22,10 +27,6 @@ local.properties
 # Android Studio
 .idea/
 .gradle
-/*/local.properties
-/*/out
-/*/*/build
-/*/*/production
 *.iml
 *.iws
 *.ipr
