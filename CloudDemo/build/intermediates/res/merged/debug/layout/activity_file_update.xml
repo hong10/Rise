@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewUpdPath"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="属性："
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextUpdAttr"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.87"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/btnUpdate"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout><!-- From: file:/E:/Rise/CloudDemo/res/layout/activity_file_update.xml -->
