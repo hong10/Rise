@@ -26,6 +26,13 @@
         <activity
             android:name=".LoadPicFromNetActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity
+            android:name=".FakeNetEasyNewsActivity"
+            android:label="Tabs/Styled"
+            android:theme="@style/StyledIndicators"></activity>
+
     </application>
 
 </manifest>
