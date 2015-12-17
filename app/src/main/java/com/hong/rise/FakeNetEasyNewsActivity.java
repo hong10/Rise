@@ -136,25 +136,28 @@ public class FakeNetEasyNewsActivity extends Activity {
             Animation animation = null;
 
             //init animation
-            switch (position){
+            switch (position) {
                 case 0:
-                    if(currentIndex == 1) {
+                    if (currentIndex == 1) {
                         animation = new TranslateAnimation(cursorWidth, 0, 0, 0);
-                    }else if(currentIndex == 2) {
-                        animation = new TranslateAnimation(2 * currentIndex, 0, 0, 0);
+                    } else if (currentIndex == 2) {
+                        animation = new TranslateAnimation(2 * currentIndex,0,  0, 0);
                     }
+                    break;
                 case 1:
-                    if(currentIndex == 0) {
-                        animation = new TranslateAnimation(0, cursorWidth, 0, 0);
-                    }else if(currentIndex == 2) {
-                        animation = new TranslateAnimation(2 * cursorWidth, cursorWidth, 0, 0);
+                    if (currentIndex == 0) {
+                        animation = new TranslateAnimation(0,cursorWidth,  0, 0);
+                    } else if (currentIndex == 2) {
+                        animation = new TranslateAnimation(2 * cursorWidth,cursorWidth,  0, 0);
                     }
+                    break;
                 case 2:
-                    if(currentIndex == 0) {
-                        animation = new TranslateAnimation(0, 2*cursorWidth, 0, 0);
-                    }else if(currentIndex == 1) {
-                        animation = new TranslateAnimation(2 * cursorWidth, cursorWidth, 0, 0);
+                    if (currentIndex == 0) {
+                        animation = new TranslateAnimation(0,2 * cursorWidth,  0, 0);
+                    } else if (currentIndex == 1) {
+                        animation = new TranslateAnimation(cursorWidth, 2 * cursorWidth, 0, 0);
                     }
+                    break;
             }
 
             currentIndex = position;
