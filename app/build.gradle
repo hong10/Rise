@@ -41,4 +41,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile project(':library')
+    compile files('libs/universal-image-loader-1.9.5.jar')
 }

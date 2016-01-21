@@ -35,5 +35,11 @@
         android:onClick="fakeNetEasyNewsClient"
         android:text="仿网易新闻客户端" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loadImageDemo"
+        android:text="加载图片示例" />
+
 
 </LinearLayout>

@@ -36,4 +36,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
 
     }
+
+    public void loadImageDemo(View view) {
+        Intent intent = new Intent(this, LoadImageDemo.class);
+        startActivity(intent);
+    }
 }
