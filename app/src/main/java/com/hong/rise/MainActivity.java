@@ -41,4 +41,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, LoadImageDemo.class);
         startActivity(intent);
     }
+
+    public void fragmentDemo(View view) {
+        Intent intent = new Intent(this, FragmentDemoActivity.class);
+        startActivity(intent);
+    }
 }

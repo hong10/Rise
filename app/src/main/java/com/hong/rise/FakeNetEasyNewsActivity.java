@@ -130,6 +130,7 @@ public class FakeNetEasyNewsActivity extends Activity {
 
         }
 
+        // position : target index
         @Override
         public void onPageSelected(int position) {
 //            Animation animation = new TranslateAnimation(cursorWidth * currentIndex, currentIndex * position, 0, 0);
@@ -161,6 +162,10 @@ public class FakeNetEasyNewsActivity extends Activity {
             }
 
             currentIndex = position;
+            /**
+            为什么会有setFillAfter 和 setFillBefore这两个方法：
+            是因为有动画链的原因，假定你有一个移动的动画紧跟一个淡出的动画，如果你不把移动的动画的setFillAfter置为true，那么移动动画结束后，View会回到原来的位置淡出，如果setFillAfter置为true， 就会在移动动画结束的位置淡出
+             */
             animation.setFillAfter(true);
             animation.setDuration(300);
             ivCursor.startAnimation(animation);
