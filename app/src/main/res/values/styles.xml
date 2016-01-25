@@ -91,4 +91,15 @@
         <item name="fadeLength">1000</item>
         <item name="fadeDelay">1000</item>
     </style>
+
+    <style name="tvStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
 </resources>

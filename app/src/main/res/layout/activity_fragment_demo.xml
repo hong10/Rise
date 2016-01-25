@@ -9,11 +9,51 @@
         android:layout_width="match_parent"
         android:layout_height="45dip"></fragment>
 
-    <fragment
+    <!--<fragment
         android:id="@+id/fragment_content"
+        android:layout_below="@id/fragment_title"
         android:name="com.hong.rise.fragment.ContentFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></fragment>
+        android:layout_height="match_parent"></fragment>-->
 
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#c0c0c0"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_friend"
+            style="@style/tvStyle"
+            android:text="朋友" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            style="@style/tvStyle"
+            android:text="通讯录" />
+
+        <TextView
+            android:id="@+id/tv_find"
+            style="@style/tvStyle"
+            android:text="发现" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            style="@style/tvStyle"
+            android:text="设置" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_button"
+        android:layout_below="@id/fragment_title"></FrameLayout>
 
 </RelativeLayout>
