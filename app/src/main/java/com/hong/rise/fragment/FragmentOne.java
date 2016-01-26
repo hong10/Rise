@@ -3,8 +3,6 @@ package com.hong.rise.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +17,15 @@ public class FragmentOne extends Fragment {
 
 
     private Button btOpenTwo;
+    private FrOneBtListener frOneBtListener;
+
+    public void setFrOneBtListener(FrOneBtListener frOneBtListener) {
+        this.frOneBtListener = frOneBtListener;
+    }
+
+    public interface FrOneBtListener {
+        void onFrOneBtClick();
+    }
 
 
     @Override
@@ -31,12 +38,23 @@ public class FragmentOne extends Fragment {
         btOpenTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager manager = getFragmentManager();
+               /* FragmentManager manager = getFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 Fragment fragmentTwo = new FragmentTwo();
                 transaction.replace(R.id.fl_content, fragmentTwo, "two");
                 transaction.addToBackStack(null);
-                transaction.commit();
+                transaction.commit();*/
+
+                //为了让FragmentOne和activity解耦，所以在FragmemtOne暴露一个接口，
+                //这接口中暴露一个button点击的方法，供实现接口的activity实现；
+                /*if (getActivity() instanceof FrOneBtListener) {
+                    ((FrOneBtListener) getActivity()).onFrOneBtClick();
+                }*/
+
+                if (frOneBtListener != null) {
+                    frOneBtListener.onFrOneBtClick();
+                }
+
             }
         });
 
