@@ -46,4 +46,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, FragmentDemoActivity.class);
         startActivity(intent);
     }
+
+    public void lotteryDemo(View view) {
+        Intent intent = new Intent(this,LotteryLaunchActivity.class);
+        startActivity(intent);
+    }
 }

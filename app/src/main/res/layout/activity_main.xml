@@ -52,6 +52,12 @@
             android:onClick="fragmentDemo"
             android:text="fragmentDemo" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lotteryDemo"
+            android:text="手机彩票" />
+
 
     </LinearLayout>
 
