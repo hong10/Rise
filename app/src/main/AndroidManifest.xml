@@ -32,7 +32,18 @@
             android:name=".FakeNetEasyNewsActivity"
             android:label="Tabs/Styled"
             android:theme="@style/StyledIndicators" />
-        <activity android:name=".LoadImageDemo" >
+        <activity android:name=".LoadImageDemo" />
+        <activity
+            android:name=".FragmentDemoActivity"
+            android:label="@string/title_activity_fragment_demo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FragmentStackDemoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LotteryLaunchActivity"
+            android:label="@string/title_activity_lottery_launch"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

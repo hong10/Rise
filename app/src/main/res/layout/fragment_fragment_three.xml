@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hong.rise.fragment.FragmentThree">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/bt_fragment_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fragment Three"
+        android:textColor="#ff0000"
+        android:textSize="30sp" />
+
+</FrameLayout>

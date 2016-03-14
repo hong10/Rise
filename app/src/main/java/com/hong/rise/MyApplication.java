@@ -2,6 +2,7 @@ package com.hong.rise;
 
 import android.app.Application;
 
+
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
@@ -14,11 +15,12 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+
         /**
-        //创建默认的ImageLoader配置参数
-        ImageLoaderConfiguration configuration = ImageLoaderConfiguration
-                .createDefault(this);
-        */
+         //创建默认的ImageLoader配置参数
+         ImageLoaderConfiguration configuration = ImageLoaderConfiguration
+         .createDefault(this);
+         */
 
         //可以打印log的初始化
         //创建默认的ImageLoader配置参数
