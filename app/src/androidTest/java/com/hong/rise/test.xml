@@ -1,11 +1,20 @@
-<?xml version='1.0' encoding='UTF-8' ?>
+<!--<?xml version='1.0' encoding='UTF-8' ?>
 <header>
-    <messengerid>20160313224041621,524</messengerid>
-    <timestamp>20160313224041</timestamp>
+    <messengerid>20160314203106244,581</messengerid>
+    <timestamp>20160314203106</timestamp>
     <username></username>
     <transactiontype></transactiontype>
-    <digest>8f13c9fbd1a9a1988acaf86e74ee599e</digest>
+    <digest>b445e37cdd33418a6c6e509aea81675b</digest>
     <username>889931</username>
     <compress>DES</compress>
     <source>ivr</source>
-</header>
+</header>-->
+
+<body>
+    <elements>
+        <element>
+            <lotteryid>118</lotteryid>
+            <issue>1</issue>
+        </element>
+    </elements>
+</body>

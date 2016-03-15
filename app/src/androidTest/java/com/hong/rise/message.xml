@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<message version="1.0">
+    <header>
+        <messengerid>20160315110119972751</messengerid>
+        <timestamp>20160315110119</timestamp>
+        <username></username>
+        <transactiontype></transactiontype>
+        <digest>e10201891cbc356e2c53424b61b3eb1a</digest>
+        <username>889931</username>
+        <compress>DES</compress>
+        <source>ivr</source>
+    </header>
+    <body>cgYNf1rUkTmgtXjdTAgNzw==</body>
+</message>

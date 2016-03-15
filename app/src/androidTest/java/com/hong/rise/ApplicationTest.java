@@ -6,7 +6,10 @@ import android.util.Log;
 import android.util.Xml;
 
 import com.hong.rise.lottery.ConstantValue;
+import com.hong.rise.lottery.net.protocal.Body;
 import com.hong.rise.lottery.net.protocal.Header;
+import com.hong.rise.lottery.net.protocal.Message;
+import com.hong.rise.lottery.net.protocal.element.CurrentIssueElement;
 
 import org.xmlpull.v1.XmlSerializer;
 
@@ -31,8 +34,16 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         try {
             xmlSerializer.setOutput(writer);
             xmlSerializer.startDocument(ConstantValue.ENCONDING, null);
-            Header header = new Header();
-            header.serializerHeader(xmlSerializer, "hong");
+//            Header header = new Header();
+//            header.serializerHeader(xmlSerializer, "hong");
+//            CurrentIssueElement element = new CurrentIssueElement();
+//            element.getLotteryid().setTagValue("118");
+//            Body body = new Body();
+//            body.getElements().add(element);
+//            body.serializerBody(xmlSerializer);
+
+            Message message = new Message();
+            message.serializerMessage(xmlSerializer);
             xmlSerializer.endDocument();
 
             Log.i(TAG, writer.toString());

@@ -1,5 +1,7 @@
 package com.hong.rise.lottery.net.protocal;
 
+import android.util.Log;
+
 import com.hong.rise.lottery.ConstantValue;
 
 import org.apache.commons.codec.digest.DigestUtils;
@@ -15,17 +17,18 @@ import java.util.Random;
  * Created by hong on 2016/3/13.
  */
 public class Header {
+    private static final String TAG = "Header";
     /*
-    <messengerid>20120803102102460191</messengerid>
-  <timestamp>20120803102102</timestamp>
-  <username>13200000000</username>
-  <transactiontype>12002</transactiontype>
-  <digest>1b10c6d719c78cdb70c1d357978eff2a</digest>
-  <agenterid>1000002</agenterid>
-  <compress>DES</compress>
-  <source>ivr</source>
+        <messengerid>20120803102102460191</messengerid>
+      <timestamp>20120803102102</timestamp>
+      <username>13200000000</username>
+      <transactiontype>12002</transactiontype>
+      <digest>1b10c6d719c78cdb70c1d357978eff2a</digest>
+      <agenterid>1000002</agenterid>
+      <compress>DES</compress>
+      <source>ivr</source>
 
-     */
+         */
     private Leaf messagerid = new Leaf("messengerid");
     private Leaf timestamp = new Leaf("timestamp");
     private Leaf username = new Leaf("username");
@@ -48,7 +51,9 @@ public class Header {
         Random random = new Random();
         int num = random.nextInt(999999) + 1;//[0,n) [1,1000000)
         DecimalFormat decimalFormat = new DecimalFormat();
-        messagerid.setTagValue(time + decimalFormat.format(num));
+        messagerid.setTagValue(time + decimalFormat.format(num).replace(",", ""));
+        Log.i(TAG, time + decimalFormat.format(num).replace(",", ""));
+        Log.i(TAG, decimalFormat.format(num).replace(",", ""));
 
         //digest:时间戳+代理商的密码+完整的body（明文）
         String orgInfo = time + ConstantValue.AGENTER_PASSWORD + body;
