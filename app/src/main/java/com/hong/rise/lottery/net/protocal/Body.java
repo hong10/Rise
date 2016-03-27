@@ -20,6 +20,26 @@ public class Body {
 
     private List<Element> elements = new ArrayList<Element>();
 
+
+    //**********处理服务器的回复**************
+    private Oelement oelement = new Oelement();
+
+    public Oelement getOelement() {
+        return oelement;
+    }
+
+
+    private String serviceBodyInsideDESInfo;
+
+    public String getServiceBodyInsideDESInfo() {
+        return serviceBodyInsideDESInfo;
+    }
+
+    public void setServiceBodyInsideDESInfo(String serviceBodyInsideDESInfo) {
+        this.serviceBodyInsideDESInfo = serviceBodyInsideDESInfo;
+    }
+    //**********处理服务器的回复**************
+
     /**
      * 由于要获取elemet中TransactionType,所以要暴露一个get方法
      */

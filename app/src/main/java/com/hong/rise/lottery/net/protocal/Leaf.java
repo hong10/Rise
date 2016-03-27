@@ -13,6 +13,10 @@ public class Leaf {
     private String tagName;
     private String tagValue;
 
+    public String getTagValue() {
+        return tagValue;
+    }
+
     //获取tagname
     public String getTagName() {
         return tagName;

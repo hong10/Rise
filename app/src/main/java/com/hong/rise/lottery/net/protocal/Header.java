@@ -39,6 +39,14 @@ public class Header {
     private Leaf source = new Leaf("source", ConstantValue.SOURCE);
 
 
+    public Leaf getTimestamp() {
+        return timestamp;
+    }
+
+    public Leaf getDigest() {
+        return digest;
+    }
+
     //serializer Header
     public void serializerHeader(XmlSerializer serializer, String body) {
 
