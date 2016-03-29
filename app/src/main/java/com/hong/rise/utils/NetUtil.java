@@ -1,19 +1,17 @@
 package com.hong.rise.utils;
 
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
-
-import com.hong.rise.lottery.GlobalParams;
+import android.util.Log;
 
 /**
  * Created by Administrator on 2016/3/24.
  */
 public class NetUtil {
+
+    private static final String TAG = "NetUtil";
 
     public static boolean checkNet(Context context) {
         //是否是wifi
@@ -33,7 +31,9 @@ public class NetUtil {
     }
 
     private static void readAPN(Context context) {
+        Log.i(TAG, "readAPN");
         // content://telephony/carriers/preferapn
+        /*//4.0以上不容许操作
         Uri PREFERAPN_APN_URI = Uri.parse("content://telephony/carriers/preferapn");
 
         //操作联系人类似
@@ -45,7 +45,7 @@ public class NetUtil {
             GlobalParams.PROXY = cursor.getString(cursor.getColumnIndex("proxy"));
             GlobalParams.PORT = cursor.getInt(cursor.getColumnIndex("port"));
         }
-
+*/
     }
 
     private static boolean isMobileConnection(Context context) {
