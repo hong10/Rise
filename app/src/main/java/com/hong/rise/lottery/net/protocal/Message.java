@@ -54,7 +54,7 @@ public class Message {
      * @return
      */
     public String getXml(Element element) {
-        if (element != null) {
+        if (element == null) {
             throw new IllegalArgumentException("element is null");
         }
 
