@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?xml version="1.0" encoding="utf-8"?>
+<message version="1.0">
+    <header>
+        <messengerid>20160403092017304882</messengerid>
+        <timestamp>20160403092017</timestamp>
+        <username>13200000000</username>
+        <transactiontype>14001</transactiontype>
+        <digest>114a6e320a5e6ade774c258fcea438f4</digest>
+        <username>889931</username>
+        <compress>DES</compress>
+        <source>ivr</source>
+    </header>
+    <body>
+        cgYNf1rUkTlcXIFjWR1NnvH8iusYVv9RnPZwf1jwKdOExvDTIOl4qcfgZpjG4GK5B47oMPSbuNuidYEw6pBoHh42t1JfPWroSqsvKTdI1Ek=
+    </body>
+</message>

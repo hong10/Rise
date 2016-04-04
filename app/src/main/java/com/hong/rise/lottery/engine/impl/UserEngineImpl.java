@@ -4,6 +4,8 @@ import android.util.Xml;
 
 import com.hong.rise.lottery.ConstantValue;
 import com.hong.rise.lottery.bean.User;
+import com.hong.rise.lottery.engine.BaseEngine;
+import com.hong.rise.lottery.engine.UserEngine;
 import com.hong.rise.lottery.net.protocal.Message;
 import com.hong.rise.lottery.net.protocal.element.UserLoginElement;
 import com.hong.rise.utils.DES;
@@ -19,7 +21,8 @@ import java.io.StringReader;
 /**
  * Created by hong on 2016/3/27.
  */
-public class UserEngineImpl {
+public class UserEngineImpl extends BaseEngine implements UserEngine{
+
 
     public Message login(User user) {
         //第一步：获取到登录用的xml
@@ -31,6 +34,62 @@ public class UserEngineImpl {
         message.getHeader().getUsername().setTagValue(user.getUserName());
         //Message.getXml(element)
         String xml = message.getXml(element);
+//        String tmpxml = xml.replace("<?xml version='1.0' encoding='utf-8' ?>", "<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+
+        Message result = getResult(xml);
+
+        if (result != null) {
+            XmlPullParser parser = Xml.newPullParser();
+
+            DES des = new DES();
+            String body = "<body>" + des.authcode(result.getBody().getServiceBodyInsideDESInfo(), "ENCODE", ConstantValue.DES_PASSWORD) + "</body>";
+
+            try {
+                parser.setInput(new StringReader(body));
+
+                int eventType = parser.getEventType();
+                String name;
+
+                while (eventType != XmlPullParser.END_DOCUMENT) {
+                    switch (eventType) {
+                        case XmlPullParser.START_TAG:
+                            name = parser.getName();
+                            if ("errorcode".equals(name)) {
+                                result.getBody().getOelement().setErrorcode(parser.nextText());
+                            }
+                            if ("errormsg".equals(name)) {
+                                result.getBody().getOelement().setErrormsg(parser.nextText());
+
+                            }
+                            break;
+                    }
+
+                    eventType = parser.next();
+                }
+                return result;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return null;
+
+
+    }
+
+
+    public Message login1(User user) {
+        //第一步：获取到登录用的xml
+        //创建登录用Element
+        UserLoginElement element = new UserLoginElement();
+        //设置用户数据
+        element.getActpassword().setTagValue(user.getPassWord());
+        Message message = new Message();
+        message.getHeader().getUsername().setTagValue(user.getUserName());
+        //Message.getXml(element)
+        String xml = message.getXml(element);
+//        String tmpxml = xml.replace("<?xml version='1.0' encoding='utf-8' ?>", "<?xml version=\"1.0\" encoding=\"utf-8\"?>");
 
         //第二步：发送xml到服务器端，等待回复
         //HttpClientUtil.sendXml
