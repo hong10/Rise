@@ -22,7 +22,7 @@ public interface ConstantValue {
     // des加密用密钥
     String DES_PASSWORD = "9b2648fcdfbad80f";
 
-    //    String LOTTERY_URI = "http://10.88.0.193:8080/ZCWService/Entrance";
+    //String LOTTERY_URI = "http://10.88.0.193:8080/ZCWService/Entrance";
     String LOTTERY_URI = "http://192.168.2.100:8080/ZCWService/Entrance";
 
 

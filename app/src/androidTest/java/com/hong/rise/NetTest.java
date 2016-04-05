@@ -5,8 +5,10 @@ import android.util.Log;
 
 import com.hong.rise.lottery.ConstantValue;
 import com.hong.rise.lottery.bean.User;
+import com.hong.rise.lottery.engine.UserEngine;
 import com.hong.rise.lottery.engine.impl.UserEngineImpl;
 import com.hong.rise.lottery.net.protocal.Message;
+import com.hong.rise.utils.BeanFactory;
 import com.hong.rise.utils.HttpClientUtil;
 import com.hong.rise.utils.NetUtil;
 
@@ -47,13 +49,13 @@ public class NetTest extends AndroidTestCase {
     }
 
     public void testLogin() {
-        UserEngineImpl impl = new UserEngineImpl();
-
+//        UserEngineImpl impl = new UserEngineImpl();
+        UserEngine engine = BeanFactory.getImpl(UserEngine.class);
         User user = new User();
         user.setUserName("13200000000");
         user.setPassWord("0000000");
 
-        Message login = impl.login(user);
+        Message login = engine.login(user);
         Log.i(TAG, login.getBody().getOelement().getErrorcode());
     }
 }
