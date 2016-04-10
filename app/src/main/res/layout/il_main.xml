@@ -9,15 +9,15 @@
     <include
         android:id="@+id/ii_title"
         layout="@layout/il_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"/>
 
     <include
         android:id="@+id/ii_bottom"
         layout="@layout/il_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"/>
 
     <RelativeLayout
