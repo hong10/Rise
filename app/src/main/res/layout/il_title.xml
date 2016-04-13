@@ -1,8 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity" >
+    android:layout_height="wrap_content">
 
     <!-- 标题容器：三个标题 -->
 
@@ -10,7 +9,7 @@
         android:id="@+id/ii_common_container"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/id_title_bg" >
+        android:background="@drawable/id_title_bg">
 
         <ImageView
             android:id="@+id/ii_title_goback"
@@ -44,7 +43,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/id_title_bg"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -80,7 +79,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/id_title_bg"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="wrap_content"
