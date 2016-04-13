@@ -8,11 +8,11 @@ import android.widget.TextView;
 
 import com.hong.rise.R;
 
+
 /**
  * 管理标题容器的工具
  *
  * @author Administrator
- *
  */
 public class TitleManager {
     // 显示和隐藏
