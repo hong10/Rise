@@ -82,7 +82,8 @@ public class TitleManager {
             public void onClick(View v) {
                 System.out.println("login");
                 MiddleManager middleManager = MiddleManager.getInstance();
-                middleManager.changeUI(new SecondUI(middleManager.getContext()));
+                //防止当频繁点击时重复创建对象，所以用字节码
+                middleManager.changeUI(SecondUI.class);//changeUI需要修改，不能传递对象，但是明确目标
 //				SecondUI secondUI = new SecondUI(MiddleManager.getInstance().getContext());
 //                MiddleManager.getInstance().changeUI(SecondUI.class);//changeUI需要修改，不能传递对象，但是明确目标
             }

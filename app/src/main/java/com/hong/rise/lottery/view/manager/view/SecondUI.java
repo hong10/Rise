@@ -11,17 +11,21 @@ import com.hong.rise.lottery.view.manager.BaseUI;
 /**
  * Created by hong on 2016/4/16.
  */
-public class SecondUI extends BaseUI{
+public class SecondUI extends BaseUI {
+    private TextView textView;
 
 
     public SecondUI(Context context) {
         super(context);
+        init();
     }
 
-    @Override
-    public View getChild() {
+    /**
+     * 由于第二个界面只初始化了一次，所以init()方法只会调用一次；不用每次切换界面都会初始化界面
+     */
+    private void init() {
 
-        TextView textView = new TextView(context);
+        textView = new TextView(context);
 
         ViewGroup.LayoutParams layoutParams = textView.getLayoutParams();
         layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
@@ -30,6 +34,11 @@ public class SecondUI extends BaseUI{
         textView.setBackgroundColor(Color.RED);
         textView.setText("这是第二个界面");
 
+
+    }
+
+    @Override
+    public View getChild() {
 
         return textView;
     }
