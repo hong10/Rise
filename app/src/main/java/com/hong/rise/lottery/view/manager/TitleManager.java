@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hong.rise.R;
+import com.hong.rise.lottery.view.manager.view.SecondUI;
 
 
 /**
@@ -80,7 +81,8 @@ public class TitleManager {
             @Override
             public void onClick(View v) {
                 System.out.println("login");
-
+                MiddleManager middleManager = MiddleManager.getInstance();
+                middleManager.changeUI(new SecondUI(middleManager.getContext()));
 //				SecondUI secondUI = new SecondUI(MiddleManager.getInstance().getContext());
 //                MiddleManager.getInstance().changeUI(SecondUI.class);//changeUI需要修改，不能传递对象，但是明确目标
             }

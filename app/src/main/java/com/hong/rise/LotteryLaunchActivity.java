@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
+import com.hong.rise.lottery.view.manager.MiddleManager;
 import com.hong.rise.lottery.view.manager.TitleManager;
 import com.hong.rise.lottery.view.manager.view.FirstUI;
 import com.hong.rise.lottery.view.manager.view.SecondUI;
@@ -17,19 +18,6 @@ import com.hong.rise.lottery.view.manager.view.SecondUI;
 public class LotteryLaunchActivity extends Activity {
 
     private RelativeLayout middle;
-
-    private Handler handler = new Handler() {
-
-
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-//            loadSecondUI();
-//            changeUI();
-            changeUI(new SecondUI(LotteryLaunchActivity.this));
-        }
-
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,15 +38,36 @@ public class LotteryLaunchActivity extends Activity {
 
         middle = (RelativeLayout) findViewById(R.id.ii_middle);
 
-        //显示第一给界面
+
+        //不使用handler,任意点击按钮切换
+        MiddleManager middleManager = MiddleManager.getInstance();
+        middleManager.setMiddle(middle);
+        loadFirstUI();
+
+/*        //显示第一给界面
         loadFirstUI();
 
         //延迟2秒加载第二界面
         handler.sendEmptyMessageDelayed(0, 3000);
-//        handler.sendEmptyMessage(0);
+//        handler.sendEmptyMessage(0);*/
 
 
     }
+
+    //**************  以下是演示界面切换的方法  **********************
+
+    private Handler handler = new Handler() {
+
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+//            loadSecondUI();
+//            changeUI();
+            changeUI(new SecondUI(LotteryLaunchActivity.this));
+        }
+
+    };
 
     private View child1;
 
