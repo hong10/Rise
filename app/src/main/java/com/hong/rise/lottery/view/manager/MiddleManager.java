@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
 import com.hong.rise.R;
+import com.hong.rise.lottery.ConstantValue;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
@@ -45,7 +46,64 @@ public class MiddleManager {
     }
 
 
+    /**
+     * 处理三个容器的联动
+     * @param targetClazz
+     */
     public void changeUI(Class<? extends BaseUI> targetClazz) {
+        // 判断：当前正在展示的界面和切换目标界面是否相同
+        if (currentUI != null && currentUI.getClass() == targetClazz) {
+            return;
+        }
+
+        BaseUI targetUI = null;
+
+        //判断之前有没有创建过——曾经创建过的界面要保存到cache
+        String key = targetClazz.getSimpleName();
+        if (VIEWCACHE.containsKey(key)) {
+            //创建了就重用
+            targetUI = VIEWCACHE.get(key);
+        } else {
+            //没有创建，就创建
+            try {
+                Constructor<? extends BaseUI> constructor = targetClazz.getConstructor(Context.class);
+                targetUI = constructor.newInstance(getContext());
+                VIEWCACHE.put(key, targetUI);
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw new RuntimeException("constructor new instance error");
+            }
+        }
+
+        Log.i(TAG, targetUI.toString());
+        middle.removeAllViews();
+        View child = targetUI.getChild();
+        middle.addView(child);
+        child.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.second_view_in_change));
+
+        currentUI = targetUI;
+        //将当前界面存入HISTORY栈中
+        HISTOYR.addFirst(key);
+
+        changeTitleAndBottom();
+    }
+
+    private void changeTitleAndBottom() {
+
+        switch (currentUI.getID()) {
+            case ConstantValue.FRIST_VIEW:
+                TitleManager.getInstance().showUnLoginTitle();
+                BottomManager.getInstrance().showCommonBottom();
+                break;
+            case ConstantValue.SECOND_VIEW:
+                TitleManager.getInstance().showCommonTitle();
+                BottomManager.getInstrance().showGameBottom();
+                break;
+        }
+    }
+
+
+    public void changeUI2(Class<? extends BaseUI> targetClazz) {
         // 判断：当前正在展示的界面和切换目标界面是否相同
         if (currentUI != null && currentUI.getClass() == targetClazz) {
             return;
@@ -127,6 +185,9 @@ public class MiddleManager {
                 middle.removeAllViews();
                 middle.addView(targetUI.getChild());
                 currentUI = targetUI;
+
+                changeTitleAndBottom();
+
                 return true;
             }
 

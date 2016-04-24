@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.hong.rise.lottery.ConstantValue;
 import com.hong.rise.lottery.view.manager.BaseUI;
 
 /**
@@ -41,5 +42,10 @@ public class SecondUI extends BaseUI {
     public View getChild() {
 
         return textView;
+    }
+
+    @Override
+    public int getID() {
+        return ConstantValue.SECOND_VIEW;
     }
 }

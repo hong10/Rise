@@ -20,6 +20,12 @@ public abstract class BaseUI {
      */
     public abstract View getChild();
 
+    /**
+     * 获取每个节目唯一标示——作用：当容器联动时，作为比对的依据
+     * @return
+     */
+    public abstract int getID();
+
 
 
 }
