@@ -14,6 +14,7 @@ import com.hong.rise.lottery.view.manager.BottomManager;
 import com.hong.rise.lottery.view.manager.MiddleManager;
 import com.hong.rise.lottery.view.manager.TitleManager;
 import com.hong.rise.lottery.view.manager.view.FirstUI;
+import com.hong.rise.lottery.view.manager.view.Hall;
 import com.hong.rise.lottery.view.manager.view.SecondUI;
 import com.hong.rise.utils.PromptManager;
 
@@ -49,7 +50,8 @@ public class LotteryLaunchActivity extends Activity {
         MiddleManager.getInstance().addObserver(TitleManager.getInstance());
         MiddleManager.getInstance().addObserver(BottomManager.getInstrance());
 
-        middleManager.changeUI(FirstUI.class);
+        middleManager.changeUI(Hall.class);
+//        middleManager.changeUI(FirstUI.class);
 
 /*        //显示第一给界面
         loadFirstUI();

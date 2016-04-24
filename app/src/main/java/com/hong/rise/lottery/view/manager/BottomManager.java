@@ -143,8 +143,11 @@ public class BottomManager implements Observer{
         if (data != null && StringUtils.isNumeric(data.toString())) {
             int id = Integer.parseInt(data.toString());
             switch (id) {
-                case ConstantValue.FRIST_VIEW:
+                case ConstantValue.VIEW_HALL:
                     showCommonBottom();
+                    break;
+                case ConstantValue.FRIST_VIEW:
+//                    showCommonBottom();
                     break;
                 case ConstantValue.SECOND_VIEW:
                     showGameBottom();
