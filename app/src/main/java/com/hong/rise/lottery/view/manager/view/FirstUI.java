@@ -20,6 +20,16 @@ public class FirstUI extends BaseUI {
     }
 
     @Override
+    public void init() {
+
+    }
+
+    @Override
+    public void setOnClickListener() {
+
+    }
+
+    @Override
     public View getChild() {
 
         TextView textView = new TextView(context);
@@ -38,5 +48,10 @@ public class FirstUI extends BaseUI {
     @Override
     public int getID() {
         return ConstantValue.FRIST_VIEW;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

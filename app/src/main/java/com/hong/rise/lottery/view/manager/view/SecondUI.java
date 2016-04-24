@@ -24,7 +24,7 @@ public class SecondUI extends BaseUI {
     /**
      * 由于第二个界面只初始化了一次，所以init()方法只会调用一次；不用每次切换界面都会初始化界面
      */
-    private void init() {
+    public void init() {
 
         textView = new TextView(context);
 
@@ -39,6 +39,11 @@ public class SecondUI extends BaseUI {
     }
 
     @Override
+    public void setOnClickListener() {
+
+    }
+
+    @Override
     public View getChild() {
 
         return textView;
@@ -47,5 +52,10 @@ public class SecondUI extends BaseUI {
     @Override
     public int getID() {
         return ConstantValue.SECOND_VIEW;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
