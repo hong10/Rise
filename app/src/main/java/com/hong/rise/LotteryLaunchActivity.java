@@ -8,7 +8,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
@@ -16,6 +15,7 @@ import com.hong.rise.lottery.view.manager.MiddleManager;
 import com.hong.rise.lottery.view.manager.TitleManager;
 import com.hong.rise.lottery.view.manager.view.FirstUI;
 import com.hong.rise.lottery.view.manager.view.SecondUI;
+import com.hong.rise.utils.PromptManager;
 
 public class LotteryLaunchActivity extends Activity {
 
@@ -44,6 +44,11 @@ public class LotteryLaunchActivity extends Activity {
         //不使用handler,任意点击按钮切换
         MiddleManager middleManager = MiddleManager.getInstance();
         middleManager.setMiddle(middle);
+
+        //建立观察者和被观察者之间的关系（在activty中标题和底部导航添加到观察者的容器里面）
+        MiddleManager.getInstance().addObserver(TitleManager.getInstance());
+        MiddleManager.getInstance().addObserver(BottomManager.getInstrance());
+
         middleManager.changeUI(FirstUI.class);
 
 /*        //显示第一给界面
@@ -51,7 +56,8 @@ public class LotteryLaunchActivity extends Activity {
 
         //延迟2秒加载第二界面
         handler.sendEmptyMessageDelayed(0, 3000);
-//        handler.sendEmptyMessage(0);*/
+        handler.sendEmptyMessage(0);*/
+
 
 
     }
@@ -62,7 +68,8 @@ public class LotteryLaunchActivity extends Activity {
             boolean result = MiddleManager.getInstance().goBack();
             if (!result) {
                 //此时栈中只有一个界面，弹出toast提示
-                Toast.makeText(this, "是否退出应用", Toast.LENGTH_LONG).show();
+//                Toast.makeText(this, "是否退出应用", Toast.LENGTH_LONG).show();
+                PromptManager.showExitSystem(this);
             }
             return false;
         }

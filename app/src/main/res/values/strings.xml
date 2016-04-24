@@ -8,4 +8,5 @@
     <string name="title_activity_lottery_launch">LotteryLaunchActivity</string>
     <string name="is_ssq_default_notice">双色球加奖了，两亿元大派送！</string>
     <string name="is_user_loginned_test">您好：132632***** \n余额：100.00元</string>
+    <string name="is_positive">确定</string>
 </resources>

@@ -7,20 +7,20 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
 import com.hong.rise.R;
+import com.hong.rise.lottery.ConstantValue;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Observable;
 
 /**
  * Created by hong on 2016/4/23.
  */
-public class MiddleManager extends Observable {
+public class MiddleManager1 {
 
     private static final String TAG = "MiddleManager";
-    private static MiddleManager instance = null;
+    private static MiddleManager1 instance = null;
     private Map<String, BaseUI> VIEWCACHE = new HashMap<String, BaseUI>();//key:唯一的标示BaseUI的子类
     private BaseUI currentUI;
     private LinkedList<String> HISTOYR = new LinkedList<String>();
@@ -29,12 +29,12 @@ public class MiddleManager extends Observable {
         return currentUI;
     }
 
-    private MiddleManager() {
+    private MiddleManager1() {
     }
 
-    public static MiddleManager getInstance() {
+    public static MiddleManager1 getInstance() {
         if (instance == null) {
-            instance = new MiddleManager();
+            instance = new MiddleManager1();
         }
         return instance;
     }
@@ -48,7 +48,6 @@ public class MiddleManager extends Observable {
 
     /**
      * 处理三个容器的联动
-     *
      * @param targetClazz
      */
     public void changeUI(Class<? extends BaseUI> targetClazz) {
@@ -90,7 +89,8 @@ public class MiddleManager extends Observable {
     }
 
     private void changeTitleAndBottom() {
-        /*switch (currentUI.getID()) {
+
+        switch (currentUI.getID()) {
             case ConstantValue.FRIST_VIEW:
                 TitleManager.getInstance().showUnLoginTitle();
                 BottomManager.getInstrance().showCommonBottom();
@@ -99,21 +99,7 @@ public class MiddleManager extends Observable {
                 TitleManager.getInstance().showCommonTitle();
                 BottomManager.getInstrance().showGameBottom();
                 break;
-        }*/
-
-//        1. 将中间容器变成被观察的对象
-//        操作：继承Observable
-//
-//        2. 标题和底部导航变成观察者
-//        操作：实现Observer接口
-//
-//        3. 建立观察者和被观察者之间的关系（在activty中标题和底部导航添加到观察者的容器里面）
-//
-//        4. 一旦中间容器变动，修改boolean，然后通知所有的观察者 .update()
-
-        setChanged();//中间容器变动，修改boolean
-        notifyObservers(currentUI.getID());//通知所有的观察者
-
+        }
     }
 
 

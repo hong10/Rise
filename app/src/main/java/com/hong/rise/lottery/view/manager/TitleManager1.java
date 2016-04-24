@@ -7,13 +7,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hong.rise.R;
-import com.hong.rise.lottery.ConstantValue;
 import com.hong.rise.lottery.view.manager.view.SecondUI;
-
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.Observable;
-import java.util.Observer;
 
 
 /**
@@ -21,17 +15,17 @@ import java.util.Observer;
  *
  * @author Administrator
  */
-public class TitleManager implements Observer{
+public class TitleManager1 {
     // 显示和隐藏
 
-    private static TitleManager instance = null;
+    private static TitleManager1 instance = null;
 
-    private TitleManager() {
+    private TitleManager1() {
     }
 
-    public static TitleManager getInstance() {
+    public static TitleManager1 getInstance() {
         if (instance == null) {
-            instance = new TitleManager();
+            instance = new TitleManager1();
         }
         return instance;
     }
@@ -130,21 +124,5 @@ public class TitleManager implements Observer{
 
     public void changeTitle(String title) {
         titleContent.setText(title);
-    }
-
-    @Override
-    public void update(Observable observable, Object data) {
-        if (data != null && StringUtils.isNumeric(data.toString())) {
-            int id = Integer.parseInt(data.toString());
-            switch (id) {
-                case ConstantValue.FRIST_VIEW:
-                    showUnLoginTitle();
-                    break;
-                case ConstantValue.SECOND_VIEW:
-                    showCommonTitle();
-                    break;
-            }
-        }
-
     }
 }
