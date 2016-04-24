@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
@@ -42,7 +44,7 @@ public class LotteryLaunchActivity extends Activity {
         //不使用handler,任意点击按钮切换
         MiddleManager middleManager = MiddleManager.getInstance();
         middleManager.setMiddle(middle);
-        loadFirstUI();
+        middleManager.changeUI(FirstUI.class);
 
 /*        //显示第一给界面
         loadFirstUI();
@@ -52,6 +54,20 @@ public class LotteryLaunchActivity extends Activity {
 //        handler.sendEmptyMessage(0);*/
 
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            boolean result = MiddleManager.getInstance().goBack();
+            if (!result) {
+                //此时栈中只有一个界面，弹出toast提示
+                Toast.makeText(this, "是否退出应用", Toast.LENGTH_LONG).show();
+            }
+            return false;
+        }
+
+        return super.onKeyDown(keyCode, event);
     }
 
     //**************  以下是演示界面切换的方法  **********************
@@ -76,7 +92,7 @@ public class LotteryLaunchActivity extends Activity {
         child1 = firstUI.getChild();
         middle.addView(child1);
 //        child1.startAnimation(AnimationUtils.loadAnimation(this, R.anim.first_view_out_change));//这个行代码有bug，第一个界面会显示两次；
-                                                                                                    // 解决办法：需要加一个动画完成的监听，当动画完成后，清楚当前界面的view
+        // 解决办法：需要加一个动画完成的监听，当动画完成后，清楚当前界面的view
 
     }
 

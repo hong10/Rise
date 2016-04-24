@@ -10,6 +10,7 @@ import com.hong.rise.R;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 /**
@@ -17,16 +18,18 @@ import java.util.Map;
  */
 public class MiddleManager {
 
-    private static final String TAG = "MiddleManager" ;
+    private static final String TAG = "MiddleManager";
     private static MiddleManager instance = null;
-    private Map<String, BaseUI> VIEWCACHE = new HashMap<String,BaseUI>();//key:唯一的标示BaseUI的子类
+    private Map<String, BaseUI> VIEWCACHE = new HashMap<String, BaseUI>();//key:唯一的标示BaseUI的子类
     private BaseUI currentUI;
+    private LinkedList<String> HISTOYR = new LinkedList<String>();
 
     public BaseUI getCurrentUI() {
         return currentUI;
     }
 
-    private MiddleManager(){}
+    private MiddleManager() {
+    }
 
     public static MiddleManager getInstance() {
         if (instance == null) {
@@ -74,6 +77,8 @@ public class MiddleManager {
         child.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.second_view_in_change));
 
         currentUI = targetUI;
+        //将当前界面存入HISTORY栈中
+        HISTOYR.addFirst(key);
     }
 
     /**
@@ -90,5 +95,43 @@ public class MiddleManager {
 
     public Context getContext() {
         return middle.getContext();
+    }
+
+    /**
+     * 返回键的处理（模拟栈）
+     *
+     * @return true代表返回操作成功，false代表当前栈中只有一个界面
+     */
+    public boolean goBack() {
+
+        //当栈中只有一个界面时，直接返回false，不进行remove操作
+        if (HISTOYR.size() == 1) {
+            return false;
+        }
+
+        //点击back后，删除栈顶的界面；同时获取删除后，栈顶的界面
+        if (HISTOYR.size() > 0) {
+            System.out.println("1");
+
+            //点击back后，删除栈顶的界面
+            HISTOYR.removeFirst();
+
+            if (HISTOYR.size() > 0) {
+                System.out.println("2");
+
+                //获取当前栈顶的界面
+                String first = HISTOYR.getFirst();
+                BaseUI targetUI = VIEWCACHE.get(first);
+
+                //切换界面的核心方法
+                middle.removeAllViews();
+                middle.addView(targetUI.getChild());
+                currentUI = targetUI;
+                return true;
+            }
+
+        }
+
+        return false;
     }
 }
