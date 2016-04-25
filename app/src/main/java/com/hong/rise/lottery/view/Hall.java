@@ -1,8 +1,18 @@
 package com.hong.rise.lottery.view;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.Matrix;
+import android.os.Bundle;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.TranslateAnimation;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -11,6 +21,7 @@ import android.widget.TextView;
 
 import com.hong.rise.R;
 import com.hong.rise.lottery.ConstantValue;
+import com.hong.rise.lottery.GlobalParams;
 import com.hong.rise.lottery.engine.CommonInfoEngine;
 import com.hong.rise.lottery.net.protocal.Element;
 import com.hong.rise.lottery.net.protocal.Message;
@@ -22,52 +33,94 @@ import com.hong.rise.utils.PromptManager;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 /**
- * Created by hong on 2016/4/24.
+ * 购彩大厅
+ *
+ * @author Administrator
  */
 public class Hall extends BaseUI {
-
-    //第一步：加载layout(布局参数设置)
-    //第二步：初始化layout中控件
-    //第三步：设置监听
+    // 第一步：加载layout（布局参数设置）
+    // 第二步：初始化layout中控件
+    // 第三步：设置监听
 
     private ListView categoryList;// 彩种的入口
     private CategoryAdapter adapter;
-//    private TextView ssqIssue;
-//    private ImageView ssqBet;
+
+    // ViewPager配置
+    private ViewPager pager;
+    private PagerAdapter pagerAdapter;
+
+    private ImageView underLine;
+
+    private List<View> pagers;
+
+    private TextView fcTitle;// 福彩
+    private TextView tcTitle;// 体彩
+    private TextView gpcTitle;// 高频彩
 
     public Hall(Context context) {
         super(context);
-
-    }
-
-    public void setOnClickListener() {
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     public void init() {
-        showInMiddle = (LinearLayout) View.inflate(context, R.layout.il_hall1, null);
-//        ssqIssue = (TextView) findViewById(R.id.ii_hall_ssq_summary);
-//        ssqBet = (ImageView) findViewById(R.id.ii_hall_ssq_bet);
+        showInMiddle = (LinearLayout) View.inflate(context, R.layout.il_hall, null);
 
-        categoryList = (ListView) findViewById(R.id.ii_hall_lottery_list);
+        pager = (ViewPager) findViewById(R.id.ii_viewpager);
+        pagerAdapter = new MyPagerAdapter();
 
-        // needUpdate=new ArrayList<View>();
-
+        categoryList = new ListView(context);
         adapter = new CategoryAdapter();
         categoryList.setAdapter(adapter);
+        categoryList.setFadingEdgeLength(0);// 删除黑边（上下）
 
-        // 只会调用一次
-        // 每次进入购彩大厅界面，获取最新的数据——>已进入到某个界面，想去修改界面信息（存储）——>当进入到某个界面的时候，开启耗费资源的操作，当要离开界面，清理耗费资源的操作
-        // 进入界面做些工作，出去的时候还需要完成一些工作
-        // onResume（当界面被加载了：add（View）之后）
-        // onPause（当界面要被删除：removeAllView之前）——Activity抄了两个方法
+        initPager();
 
-//        getCurrentIssueInfo();
+        pager.setAdapter(pagerAdapter);
+
+        // 初始化选项卡的下划线
+        initTabStrip();
+    }
+
+
+    private void initTabStrip() {
+        underLine = (ImageView) findViewById(R.id.ii_category_selector);
+
+        fcTitle = (TextView) findViewById(R.id.ii_category_fc);
+        tcTitle = (TextView) findViewById(R.id.ii_category_tc);
+        gpcTitle = (TextView) findViewById(R.id.ii_category_gpc);
+
+        fcTitle.setTextColor(Color.RED);
+        // 屏幕宽度
+        // GlobalParams.WIN_WIDTH;
+        // 小图片的宽度
+        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.id_category_selector);
+        // bitmap.getWidth();
+
+        int offset = (GlobalParams.WIN_WIDTH / 3 - bitmap.getWidth()) / 2;
+
+        // 设置图片初始位置——向右偏移
+        Matrix matrix = new Matrix();
+        matrix.postTranslate(offset, 0);
+        underLine.setImageMatrix(matrix);
+
+    }
+
+    private void initPager() {
+        pagers = new ArrayList<View>();
+        pagers.add(categoryList);
+
+        TextView item = new TextView(context);
+        item.setText("体彩");
+        pagers.add(item);
+
+        item = new TextView(context);
+        item.setText("高频彩");
+        pagers.add(item);
+
     }
 
     @Override
@@ -76,22 +129,30 @@ public class Hall extends BaseUI {
         super.onResume();
     }
 
+    @Override
+    public int getID() {
+        return ConstantValue.VIEW_HALL;
+    }
+
     /**
-     * 获取当前销售期信息（双色球）
+     * 获取当前销售期信息(双色球)
      */
     private void getCurrentIssueInfo() {
 
+        // new MyThread().start();
+        // new MyAsyncTask().execute(ConstantValue.SSQ);
         new MyHttpTask<Integer>() {
+
             @Override
             protected Message doInBackground(Integer... params) {
-                //获取数据——业务的调用
+                // 获取数据——业务的调用
                 CommonInfoEngine engine = BeanFactory.getImpl(CommonInfoEngine.class);
                 return engine.getCurrentIssueInfo(params[0]);
             }
 
             @Override
             protected void onPostExecute(Message result) {
-
+                // 更新界面
                 if (result != null) {
                     Oelement oelement = result.getBody().getOelement();
 
@@ -100,32 +161,36 @@ public class Hall extends BaseUI {
                     } else {
                         PromptManager.showToast(context, oelement.getErrormsg());
                     }
-
                 } else {
                     // 可能：网络不通、权限、服务器出错、非法数据……
                     // 如何提示用户
-                    PromptManager.showToast(context, "服务器忙，请稍后重试");
+                    PromptManager.showToast(context, "服务器忙，请稍后重试……");
                 }
 
                 super.onPostExecute(result);
-
             }
         }.executeProxy(ConstantValue.SSQ);
-
 
     }
 
     private String text;
 
-    private void changeNotice(Element element) {
+    // private List<View> needUpdate;
+
+    private Bundle ssqBundle;
+
+    /**
+     * 修改界面提示信息
+     *
+     * @param element
+     */
+    protected void changeNotice(Element element) {
         CurrentIssueElement currentIssueElement = (CurrentIssueElement) element;
-
         String issue = currentIssueElement.getIssue();
-        String lastTime = getLasttime(currentIssueElement.getLastTime());
-
+        String lasttime = getLasttime(currentIssueElement.getLastTime());
         // 第ISSUE期 还有TIME停售
         text = context.getResources().getString(R.string.is_hall_common_summary);
-        text = StringUtils.replaceEach(text, new String[]{"ISSUE", "TIME"}, new String[]{issue, lastTime});
+        text = StringUtils.replaceEach(text, new String[]{"ISSUE", "TIME"}, new String[]{issue, lasttime});
 
         // TODO 更新界面
         // 方式一：
@@ -146,7 +211,12 @@ public class Hall extends BaseUI {
             view.setText(text);
         }
 
-//        ssqIssue.setText(text);
+
+        //  设置需要传输的数据
+        ssqBundle = new Bundle();
+        ssqBundle.putString("issue", issue);
+
+
     }
 
     /**
@@ -175,14 +245,84 @@ public class Hall extends BaseUI {
         return result.toString();
     }
 
+    // 记录ViewPger上一个界面的position信息
+    private int lastPosition = 0;
+
+
     @Override
-    public int getID() {
-        return ConstantValue.VIEW_HALL;
+    public void setOnClickListener() {
+        fcTitle.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                pager.setCurrentItem(0);
+
+            }
+
+        });
+
+        pager.setOnPageChangeListener(new OnPageChangeListener() {
+
+            @Override
+            public void onPageSelected(int position) {
+                // position:0
+
+                // fromXDelta toXDelta:相对于图片初始位置需要增加的量
+
+                TranslateAnimation animation = new TranslateAnimation(lastPosition * GlobalParams.WIN_WIDTH / 3, position * GlobalParams.WIN_WIDTH / 3, 0, 0);
+                animation.setDuration(300);
+                animation.setFillAfter(true);// 移动完后停留到终点
+
+                underLine.startAnimation(animation);
+                lastPosition = position;
+
+                // 滑动完成后
+                /*
+				 * switch(position) { case 1:// 当position从0移动到1 TranslateAnimation animation=new TranslateAnimation(0*GlobalParams.WIN_WIDTH/3, 1*GlobalParams.WIN_WIDTH/3, 0, 0);
+				 * animation.setDuration(300); animation.setFillAfter(true);// 移动完后停留到终点
+				 * 
+				 * underLine.startAnimation(animation); break; case 2:// 当position从1移动到2 animation=new TranslateAnimation(1*GlobalParams.WIN_WIDTH/3, 2*GlobalParams.WIN_WIDTH/3, 0,
+				 * 0); animation.setDuration(300); animation.setFillAfter(true);// 移动完后停留到终点
+				 * 
+				 * underLine.startAnimation(animation); break; }
+				 */
+
+                fcTitle.setTextColor(Color.BLACK);
+                tcTitle.setTextColor(Color.BLACK);
+                gpcTitle.setTextColor(Color.BLACK);
+
+                switch (position) {
+                    case 0:
+                        fcTitle.setTextColor(Color.RED);
+                        break;
+                    case 1:
+                        tcTitle.setTextColor(Color.RED);
+                        break;
+                    case 2:
+                        gpcTitle.setTextColor(Color.RED);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrolled(int arg0, float arg1, int arg2) {
+                // 属性动画
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int arg0) {
+            }
+        });
     }
 
     // 资源信息
-    private int[] logoResIds = new int[] { R.drawable.id_ssq, R.drawable.id_3d, R.drawable.id_qlc };
-    private int[] titleResIds = new int[] { R.string.is_hall_ssq_title, R.string.is_hall_3d_title, R.string.is_hall_qlc_title };
+    private int[] logoResIds = new int[]{R.drawable.id_ssq, R.drawable.id_3d, R.drawable.id_qlc};
+    private int[] titleResIds = new int[]{R.string.is_hall_ssq_title, R.string.is_hall_3d_title, R.string.is_hall_qlc_title};
+
+    @Override
+    public void onClick(View v) {
+
+    }
 
     private class CategoryAdapter extends BaseAdapter {
 
@@ -202,7 +342,7 @@ public class Hall extends BaseUI {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             ViewHolder holder = null;
 
             if (convertView == null) {
@@ -227,11 +367,19 @@ public class Hall extends BaseUI {
             holder.logo.setImageResource(logoResIds[position]);
             holder.title.setText(titleResIds[position]);
 
-            holder.summary.setTag(position);//给要更新的控件，设置tag
+            holder.summary.setTag(position);
 
-            // if (StringUtils.isNotBlank(text) && position == 0) {
-            // holder.summary.setText(text);
-            // }
+            holder.bet.setOnClickListener(new OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    if (position == 0) {
+//						MiddleManager.getInstance().changeUI(PlaySSQ.class,ssqBundle);
+
+                    }
+
+                }
+            });
             return convertView;
         }
 
@@ -245,4 +393,34 @@ public class Hall extends BaseUI {
 
     }
 
+    /**
+     * Viewpager用adapter
+     *
+     * @author Administrator
+     */
+    private class MyPagerAdapter extends PagerAdapter {
+
+        public Object instantiateItem(ViewGroup container, int position) {
+            View view = pagers.get(position);
+            container.addView(view);
+            return view;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            View view = pagers.get(position);
+
+            container.removeView(view);
+        }
+
+        @Override
+        public int getCount() {
+            return pagers.size();
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == object;
+        }
+    }
 }

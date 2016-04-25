@@ -4,13 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
+import com.hong.rise.lottery.GlobalParams;
 import com.hong.rise.lottery.view.FirstUI;
-import com.hong.rise.lottery.view.Hall1;
+import com.hong.rise.lottery.view.Hall;
 import com.hong.rise.lottery.view.SecondUI;
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
@@ -26,7 +28,25 @@ public class LotteryLaunchActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.il_main);
+        // // commons-codec.jar:加密用——MD5
+        // DigestUtils.md5Hex("");
+        // // commons-lang3-3.0-beta.jar:字符串操作
+        // // 字符串非空判断:null "" "     "
+        // StringUtils.isBlank("");//true
+        // StringUtils.isNotBlank("");//false
+        // // 字符串替换
+        // String info="ppppNUM1ppppNUM2ppppp";
+        // info=StringUtils.replaceEach(info, new String[]{"NUM1","NUM2"}, new
+        // String[]{"1","2"});
+        // // 字符截取
+        // info="<body>.......</body>";
+        // StringUtils.substringBetween(info, "<body>", "</body>");
 
+        // 获取屏幕的宽度
+
+        DisplayMetrics metrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        GlobalParams.WIN_WIDTH = metrics.widthPixels;
         init();
     }
 
@@ -50,7 +70,7 @@ public class LotteryLaunchActivity extends Activity {
         MiddleManager.getInstance().addObserver(TitleManager.getInstance());
         MiddleManager.getInstance().addObserver(BottomManager.getInstrance());
 
-        middleManager.changeUI(Hall1.class);
+        middleManager.changeUI(Hall.class);
 //        middleManager.changeUI(FirstUI.class);
 
 /*        //显示第一给界面
