@@ -14,7 +14,7 @@ import java.io.IOException;
 public class CurrentIssueElement extends Element {
 
     private Leaf lotteryid = new Leaf("lotteryid");
-    private Leaf issue = new Leaf("issue", "1");
+    private Leaf issues = new Leaf("issues", "1");
 
     public Leaf getLotteryid() {
         return lotteryid;
@@ -27,7 +27,7 @@ public class CurrentIssueElement extends Element {
         try {
             serializer.startTag(null, "element");
             lotteryid.serializerLeaf(serializer);
-            issue.serializerLeaf(serializer);
+            issues.serializerLeaf(serializer);
             serializer.endTag(null, "element");
 
         } catch (IOException e) {
@@ -39,4 +39,28 @@ public class CurrentIssueElement extends Element {
     public String getTransactionType() {
         return "12002";
     }
+
+
+    /*********************
+     * 服务器回复
+     ***********************/
+    private String issue;
+    private String lastTime;
+
+    public String getIssue() {
+        return issue;
+    }
+
+    public void setIssue(String issue) {
+        this.issue = issue;
+    }
+
+    public String getLastTime() {
+        return lastTime;
+    }
+
+    public void setLastTime(String lastTime) {
+        this.lastTime = lastTime;
+    }
+    /********************************************/
 }
