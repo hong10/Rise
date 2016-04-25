@@ -77,10 +77,19 @@ public class MiddleManager extends Observable {
         }
 
         Log.i(TAG, targetUI.toString());
+
+        if (currentUI != null) {
+            // 在清理掉当前正在展示的界面之前——onPause方法(当要离开界面，清理耗费资源的操作)
+            currentUI.onPause();//onPause（当界面要被删除：removeAllView之前）
+        }
+
         middle.removeAllViews();
         View child = targetUI.getChild();
         middle.addView(child);
         child.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.second_view_in_change));
+
+        // 在加载完界面之后——onResume(当进入到某个界面的时候，开启耗费资源的操作)
+        targetUI.onResume();//onResume（当界面被加载了：add（View）之后）
 
         currentUI = targetUI;
         //将当前界面存入HISTORY栈中

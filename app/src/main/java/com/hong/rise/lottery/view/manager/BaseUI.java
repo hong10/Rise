@@ -69,6 +69,7 @@ public abstract class BaseUI implements View.OnClickListener {
 
     /**
      * 继承AsyncTask这个类时，需要重写doInBackground()方法；如果不重写该方法，就要将这个类用abstract修饰
+     *
      * @param <Params>
      */
     protected abstract class MyHttpTask<Params> extends AsyncTask<Params, Void, Message> {
@@ -90,6 +91,18 @@ public abstract class BaseUI implements View.OnClickListener {
 
         }
 
+    }
+
+    /**
+     * 要出去的时候调用
+     */
+    public void onPause() {
+    }
+
+    /**
+     * 进入到界面之后
+     */
+    public void onResume() {
     }
 
 }

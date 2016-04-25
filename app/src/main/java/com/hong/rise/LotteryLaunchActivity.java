@@ -10,7 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
 import com.hong.rise.lottery.view.FirstUI;
-import com.hong.rise.lottery.view.Hall;
+import com.hong.rise.lottery.view.Hall1;
 import com.hong.rise.lottery.view.SecondUI;
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
@@ -50,7 +50,7 @@ public class LotteryLaunchActivity extends Activity {
         MiddleManager.getInstance().addObserver(TitleManager.getInstance());
         MiddleManager.getInstance().addObserver(BottomManager.getInstrance());
 
-        middleManager.changeUI(Hall.class);
+        middleManager.changeUI(Hall1.class);
 //        middleManager.changeUI(FirstUI.class);
 
 /*        //显示第一给界面
