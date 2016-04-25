@@ -9,13 +9,13 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
+import com.hong.rise.lottery.view.FirstUI;
+import com.hong.rise.lottery.view.Hall;
+import com.hong.rise.lottery.view.SecondUI;
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.BottomManager;
 import com.hong.rise.lottery.view.manager.MiddleManager;
 import com.hong.rise.lottery.view.manager.TitleManager;
-import com.hong.rise.lottery.view.manager.view.FirstUI;
-import com.hong.rise.lottery.view.manager.view.Hall;
-import com.hong.rise.lottery.view.manager.view.SecondUI;
 import com.hong.rise.utils.PromptManager;
 
 public class LotteryLaunchActivity extends Activity {

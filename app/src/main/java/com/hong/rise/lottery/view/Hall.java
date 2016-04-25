@@ -1,4 +1,4 @@
-package com.hong.rise.lottery.view.manager.view;
+package com.hong.rise.lottery.view;
 
 import android.content.Context;
 import android.view.View;

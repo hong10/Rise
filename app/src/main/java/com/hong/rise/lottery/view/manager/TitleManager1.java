@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hong.rise.R;
-import com.hong.rise.lottery.view.manager.view.SecondUI;
+import com.hong.rise.lottery.view.SecondUI;
 
 
 /**

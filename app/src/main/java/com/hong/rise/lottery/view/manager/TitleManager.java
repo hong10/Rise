@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.hong.rise.R;
 import com.hong.rise.lottery.ConstantValue;
-import com.hong.rise.lottery.view.manager.view.SecondUI;
+import com.hong.rise.lottery.view.SecondUI;
 
 import org.apache.commons.lang3.StringUtils;
 

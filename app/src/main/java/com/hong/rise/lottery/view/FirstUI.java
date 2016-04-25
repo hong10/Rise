@@ -1,4 +1,4 @@
-package com.hong.rise.lottery.view.manager.view;
+package com.hong.rise.lottery.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.hong.rise.lottery.ConstantValue;
 import com.hong.rise.lottery.view.manager.BaseUI;
+
 
 /**
  * Created by hong on 2016/4/16.
