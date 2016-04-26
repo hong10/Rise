@@ -11,7 +11,6 @@ import android.widget.GridView;
 import com.hong.rise.R;
 import com.hong.rise.lottery.Adapter.PoolAdapter;
 import com.hong.rise.lottery.ConstantValue;
-import com.hong.rise.lottery.view.custom.MyGridView;
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.TitleManager;
 
@@ -21,7 +20,7 @@ import java.util.List;
 /**
  * Created by hong on 2016/4/26.
  */
-public class PlaySSQ extends BaseUI {
+public class PlaySSQ1 extends BaseUI {
 
     // 通用三步
 
@@ -49,7 +48,7 @@ public class PlaySSQ extends BaseUI {
     private Button randomRed;
     private Button randomBlue;
     // 选号容器
-    private MyGridView redContainer;
+    private GridView redContainer;
     private GridView blueContainer;
 
     private PoolAdapter redAdapter;
@@ -58,15 +57,15 @@ public class PlaySSQ extends BaseUI {
     private List<Integer> redNums;
     private List<Integer> blueNums;
 
-    public PlaySSQ(Context context) {
+    public PlaySSQ1(Context context) {
         super(context);
     }
 
     @Override
     public void init() {
-        showInMiddle = (ViewGroup) View.inflate(context, R.layout.il_playssq, null);
+        showInMiddle = (ViewGroup) View.inflate(context, R.layout.il_playssq1, null);
 
-        redContainer = (MyGridView) findViewById(R.id.ii_ssq_red_number_container);
+        redContainer = (GridView) findViewById(R.id.ii_ssq_red_number_container);
         blueContainer = (GridView) findViewById(R.id.ii_ssq_blue_number_container);
         randomRed = (Button) findViewById(R.id.ii_ssq_random_red);
         randomBlue = (Button) findViewById(R.id.ii_ssq_random_blue);
@@ -86,25 +85,9 @@ public class PlaySSQ extends BaseUI {
         randomRed.setOnClickListener(this);
         randomBlue.setOnClickListener(this);
 
-        //自定义的GridView（选中后头上会冒泡）
-        redContainer.setOnActionUpListener(new MyGridView.OnActionUpListener() {
-            @Override
-            public void onActionUp(View view, int position) {
-                if (!redNums.contains(position + 1)) {
-                    //如果之前没有被选中
-                    //设置ball的背景
-                    view.setBackgroundResource(R.drawable.id_redball);
-                    redNums.add(position + 1);
-                } else {
-                    //如果之前选中了
-                    //此时将背景色改为默认背景色
-                    view.setBackgroundResource(R.drawable.id_defalut_ball);
-                    redNums.remove((Object) (position + 1));//redNums.remove(int),这个代码的意思是，移出第一个位置上的元素，会报出越界的异常
-                }
-            }
-        });
 
-/*        redContainer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //TODO 存在bug,当滚动红色球所在scrollView时，被选中的红球滚出界面后，就变成了未选中，需要调试
+        redContainer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -124,7 +107,7 @@ public class PlaySSQ extends BaseUI {
                 }
 
             }
-        });*/
+        });
 
         blueContainer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

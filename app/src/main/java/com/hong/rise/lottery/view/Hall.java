@@ -375,7 +375,7 @@ public class Hall extends BaseUI {
                 @Override
                 public void onClick(View v) {
                     if (position == 0) {
-						MiddleManager.getInstance().changeUI(PlaySSQ.class,ssqBundle);
+						MiddleManager.getInstance().changeUI(PlaySSQ1.class,ssqBundle);
 
                     }
 
