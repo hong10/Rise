@@ -28,6 +28,7 @@ import com.hong.rise.lottery.net.protocal.Message;
 import com.hong.rise.lottery.net.protocal.Oelement;
 import com.hong.rise.lottery.net.protocal.element.CurrentIssueElement;
 import com.hong.rise.lottery.view.manager.BaseUI;
+import com.hong.rise.lottery.view.manager.MiddleManager;
 import com.hong.rise.utils.BeanFactory;
 import com.hong.rise.utils.PromptManager;
 
@@ -374,7 +375,7 @@ public class Hall extends BaseUI {
                 @Override
                 public void onClick(View v) {
                     if (position == 0) {
-//						MiddleManager.getInstance().changeUI(PlaySSQ.class,ssqBundle);
+						MiddleManager.getInstance().changeUI(PlaySSQ.class,ssqBundle);
 
                     }
 

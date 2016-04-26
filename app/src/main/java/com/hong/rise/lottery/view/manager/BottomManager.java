@@ -152,6 +152,9 @@ public class BottomManager implements Observer{
                 case ConstantValue.SECOND_VIEW:
                     showGameBottom();
                     break;
+                case ConstantValue.VIEW_SSQ:
+                    showCommonBottom();
+                    break;
             }
         }
     }

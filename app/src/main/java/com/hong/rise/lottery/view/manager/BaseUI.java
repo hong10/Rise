@@ -2,6 +2,7 @@ package com.hong.rise.lottery.view.manager;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -16,6 +17,15 @@ import com.hong.rise.utils.PromptManager;
 public abstract class BaseUI implements View.OnClickListener {
     protected Context context;
     protected ViewGroup showInMiddle;
+    protected Bundle bundle;
+
+    public Bundle getBundle() {
+        return bundle;
+    }
+
+    public void setBundle(Bundle bundle) {
+        this.bundle = bundle;
+    }
 
     public BaseUI(Context context) {
         this.context = context;

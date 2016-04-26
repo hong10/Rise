@@ -1,6 +1,7 @@
 package com.hong.rise.lottery.view.manager;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AnimationUtils;
@@ -43,6 +44,70 @@ public class MiddleManager extends Observable {
 
     public void setMiddle(RelativeLayout middle) {
         this.middle = middle;
+    }
+
+
+    /**
+     * 如果需要传递数据给目标界面
+     *
+     * @param targetClazz
+     * @param bundle
+     */
+    public void changeUI(Class<? extends BaseUI> targetClazz, Bundle bundle) {
+
+        // 判断：当前正在展示的界面和切换目标界面是否相同
+        if (currentUI != null && currentUI.getClass() == targetClazz) {
+            return;
+        }
+
+        BaseUI targetUI = null;
+        // 一旦创建过，重用
+        // 判断是否创建了——曾经创建过的界面需要存储
+        String key = targetClazz.getSimpleName();
+        if (VIEWCACHE.containsKey(key)) {
+            // 创建了，重用
+            targetUI = VIEWCACHE.get(key);
+        } else {
+            // 否则，创建
+            try {
+                Constructor<? extends BaseUI> constructor = targetClazz.getConstructor(Context.class);
+                targetUI = constructor.newInstance(getContext());
+                VIEWCACHE.put(key, targetUI);
+            } catch (Exception e) {
+                throw new RuntimeException("constructor new instance error");
+            }
+        }
+
+        if (targetUI != null) {
+            targetUI.setBundle(bundle);
+        }
+
+        Log.i(TAG, targetUI.toString());
+
+        if (currentUI != null) {
+            // 在清理掉当前正在展示的界面之前——onPause方法
+            currentUI.onPause();
+        }
+        // 切换界面的核心代码
+        middle.removeAllViews();
+        // FadeUtil.fadeOut(child1, 2000);
+        View child = targetUI.getChild();
+        middle.addView(child);
+        child.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.second_view_in_change));
+        // FadeUtil.fadeIn(child, 2000, 1000);
+
+        // 在加载完界面之后——onResume
+        targetUI.onResume();
+
+        currentUI = targetUI;
+
+        // 将当前显示的界面放到栈顶
+        HISTOYR.addFirst(key);
+
+
+        // 当中间容器切换成功时，处理另外的两个容器的变化
+        changeTitleAndBottom();
+
     }
 
 
