@@ -181,11 +181,47 @@ public class PlaySSQ1 extends BaseUI {
     public void onResume() {
         changeTitle();
 
-        listener = new ShakeListener();
+        listener = new ShakeListener(context){
+
+            @Override
+            public void randomCure() {
+                randomSSQ();
+            }
+        };
         //注册摇晃传感器
         sensorManager.registerListener(listener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_FASTEST);
 
         super.onResume();
+    }
+
+
+    /**
+     * 机选一注
+     */
+    private void randomSSQ() {
+
+        Random random = new Random();
+        redNums.clear();
+        blueNums.clear();
+
+        // 机选红球
+        while (redNums.size() < 6) {
+            int num = random.nextInt(33) + 1;
+
+            if (redNums.contains(num)) {
+                continue;
+            }
+            redNums.add(num);
+        }
+        int num = random.nextInt(16) + 1;
+        blueNums.add(num);
+
+        // 处理展示
+        redAdapter.notifyDataSetChanged();
+        blueAdapter.notifyDataSetChanged();
+
+//        changeNotice();
+
     }
 
     @Override
