@@ -14,4 +14,9 @@ public class GlobalParams {
      */
     public static int WIN_WIDTH=0;
 
+    /**
+     * 用户的余额
+     */
+    public static Float MONEY=0f;
+
 }

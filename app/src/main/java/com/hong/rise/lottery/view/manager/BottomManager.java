@@ -82,6 +82,11 @@ public class BottomManager implements Observer{
 
             public void onClick(View v) {
                 Log.i(TAG, "点击清空按钮");
+                BaseUI currentUI = MiddleManager.getInstance().getCurrentUI();
+
+                if (currentUI instanceof PlayGame) {
+                    ((PlayGame) currentUI).clear();
+                }
 
             }
         });
@@ -153,7 +158,7 @@ public class BottomManager implements Observer{
                     showGameBottom();
                     break;
                 case ConstantValue.VIEW_SSQ:
-                    showCommonBottom();
+                    showGameBottom();
                     break;
             }
         }
