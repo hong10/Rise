@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.hong.rise.R;
 
 import java.text.DecimalFormat;
+import java.util.List;
 
 /**
  * Created by hong on 2016/4/26.
@@ -18,11 +19,13 @@ public class PoolAdapter extends BaseAdapter {
     private Context context;
     private int endNum;
     private int selectBgResId;//选中的背景图片的资源id
+    private List<Integer> selectNums;
 
-    public PoolAdapter(Context context, int endNum, int selectBgResId) {
+    public PoolAdapter(Context context, int endNum, int selectBgResId, List<Integer> selectNums) {
         this.context = context;
         this.endNum = endNum;
         this.selectBgResId = selectBgResId;
+        this.selectNums = selectNums;
     }
 
     @Override
@@ -49,8 +52,13 @@ public class PoolAdapter extends BaseAdapter {
 
         ball.setGravity(Gravity.CENTER);
 
-        ball.setBackgroundResource(R.drawable.id_defalut_ball);
 
+        if (selectNums.contains(position + 1)) {
+            ball.setBackgroundResource(selectBgResId);
+
+        } else {
+            ball.setBackgroundResource(R.drawable.id_defalut_ball);
+        }
 
         return ball;
     }

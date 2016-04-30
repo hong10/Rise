@@ -44,7 +44,8 @@
         <activity
             android:name=".LotteryLaunchActivity"
             android:label="@string/title_activity_lottery_launch"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

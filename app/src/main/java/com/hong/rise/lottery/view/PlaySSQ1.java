@@ -1,6 +1,8 @@
 package com.hong.rise.lottery.view;
 
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -11,11 +13,13 @@ import android.widget.GridView;
 import com.hong.rise.R;
 import com.hong.rise.lottery.Adapter.PoolAdapter;
 import com.hong.rise.lottery.ConstantValue;
+import com.hong.rise.lottery.view.listener.ShakeListener;
 import com.hong.rise.lottery.view.manager.BaseUI;
 import com.hong.rise.lottery.view.manager.TitleManager;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by hong on 2016/4/26.
@@ -56,10 +60,13 @@ public class PlaySSQ1 extends BaseUI {
 
     private List<Integer> redNums;
     private List<Integer> blueNums;
+    private ShakeListener listener;
 
     public PlaySSQ1(Context context) {
         super(context);
     }
+
+    private SensorManager sensorManager;
 
     @Override
     public void init() {
@@ -73,12 +80,16 @@ public class PlaySSQ1 extends BaseUI {
         redNums = new ArrayList<Integer>();
         blueNums = new ArrayList<Integer>();
 
-        redAdapter = new PoolAdapter(context, 33, R.drawable.id_redball);
-        blueAdapter = new PoolAdapter(context, 16, R.drawable.id_blueball);
+        redAdapter = new PoolAdapter(context, 33, R.drawable.id_redball, redNums);
+        blueAdapter = new PoolAdapter(context, 16, R.drawable.id_blueball, blueNums);
 
         redContainer.setAdapter(redAdapter);
         blueContainer.setAdapter(blueAdapter);
+
+        sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+
     }
+
 
     @Override
     public void setOnClickListener() {
@@ -138,12 +149,30 @@ public class PlaySSQ1 extends BaseUI {
 
     @Override
     public void onClick(View v) {
+        Random random = new Random();
         switch (v.getId()) {
             case R.id.ii_ssq_random_red:
+                redNums.clear();
+                while (redNums.size() < 6) {
+                    int num = random.nextInt(33) + 1;
+
+                    if (redNums.contains(num)) {
+                        continue;
+                    }
+                    redNums.add(num);
+                }
+
+                //通知刷新界面
+                redAdapter.notifyDataSetChanged();
 
                 break;
             case R.id.ii_ssq_random_blue:
+                blueNums.clear();
+                int num = random.nextInt(16) + 1;
+                blueNums.add(num);
 
+                //通知刷新界面
+                blueAdapter.notifyDataSetChanged();
                 break;
         }
     }
@@ -151,7 +180,21 @@ public class PlaySSQ1 extends BaseUI {
     @Override
     public void onResume() {
         changeTitle();
+
+        listener = new ShakeListener();
+        //注册摇晃传感器
+        sensorManager.registerListener(listener, sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_FASTEST);
+
         super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+
+        //销毁摇晃传感器
+        sensorManager.unregisterListener(listener);
+
+        super.onPause();
     }
 
     /**

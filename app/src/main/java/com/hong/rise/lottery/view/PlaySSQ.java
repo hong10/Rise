@@ -74,8 +74,8 @@ public class PlaySSQ extends BaseUI {
         redNums = new ArrayList<Integer>();
         blueNums = new ArrayList<Integer>();
 
-        redAdapter = new PoolAdapter(context, 33, R.drawable.id_redball);
-        blueAdapter = new PoolAdapter(context, 16, R.drawable.id_blueball);
+        redAdapter = new PoolAdapter(context, 33, R.drawable.id_redball, redNums);
+        blueAdapter = new PoolAdapter(context, 16, R.drawable.id_blueball, blueNums);
 
         redContainer.setAdapter(redAdapter);
         blueContainer.setAdapter(blueAdapter);
