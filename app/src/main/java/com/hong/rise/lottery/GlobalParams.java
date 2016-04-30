@@ -19,4 +19,9 @@ public class GlobalParams {
      */
     public static Float MONEY=0f;
 
+    /**
+     * 记录用户的登录状态
+     */
+    public static boolean isLogin=false;
+
 }

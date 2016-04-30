@@ -96,6 +96,12 @@ public class BottomManager implements Observer{
             public void onClick(View v) {
                 Log.i(TAG, "点击选好按钮");
 
+                BaseUI currentUI = MiddleManager.getInstance().getCurrentUI();
+
+                if (currentUI instanceof PlayGame) {
+                    ((PlayGame) currentUI).done();
+                }
+
             }
         });
     }
@@ -159,6 +165,10 @@ public class BottomManager implements Observer{
                     break;
                 case ConstantValue.VIEW_SSQ:
                     showGameBottom();
+                    break;
+                case ConstantValue.VIEW_SHOPPING:
+                case ConstantValue.VIEW_PREBET:
+                    changeBottomVisiblity(View.GONE);
                     break;
             }
         }

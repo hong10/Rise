@@ -202,6 +202,8 @@ public class PlaySSQ1 extends BaseUI implements PlayGame {
     public void onResume() {
         changeTitle();
         changeNotice();
+        clear();
+
         listener = new ShakeListener(context) {
 
             @Override
@@ -338,7 +340,45 @@ public class PlaySSQ1 extends BaseUI implements PlayGame {
         if (redNums.size() >= 6 && blueNums.size() >= 1) {
             // 一个购物车中，只能放置一个彩种，当前期的投注信息
             // ②判断：是否获取到了当前销售期的信息
-            if (bundle != null) {
+
+            //*************调试代码**********
+
+
+             // ③封装用户的投注信息：红球、蓝球、注数
+            Ticket ticket = new Ticket();
+            DecimalFormat decimalFormat = new DecimalFormat("00");
+            StringBuffer redBuffer = new StringBuffer();
+            for (Integer item : redNums) {
+                // redBuffer.append(decimalFormat.format(item)).append(" ");
+                redBuffer.append(" ").append(decimalFormat.format(item));
+            }
+            ticket.setRedNum(redBuffer.substring(1));
+
+            StringBuffer blueBuffer = new StringBuffer();
+            for (Integer item : blueNums) {
+                blueBuffer.append(" ").append(decimalFormat.format(item));
+            }
+
+            ticket.setBlueNum(blueBuffer.substring(1));
+
+            ticket.setNum(calc());
+
+            // ④创建彩票购物车，将投注信息添加到购物车中
+            ShoppingCart.getInstance().getTickets().add(ticket);
+            // ⑤设置彩种的标示，设置彩种期次
+//            ShoppingCart.getInstance().setIssue(bundle.getString("issue"));
+            ShoppingCart.getInstance().setLotteryid(ConstantValue.SSQ);
+
+            // ⑥界面跳转——购物车展示
+            MiddleManager.getInstance().changeUI(Shopping.class, bundle);
+
+            //****************************
+
+
+
+
+            //一些这段代码是真正和服务器交互时的代码，实际写代码时，服务器无法调通，所以对bundle没有进行null判断，以确保可以调试
+            /*if (bundle != null) {
                 // ③封装用户的投注信息：红球、蓝球、注数
                 Ticket ticket = new Ticket();
                 DecimalFormat decimalFormat = new DecimalFormat("00");
@@ -370,7 +410,7 @@ public class PlaySSQ1 extends BaseUI implements PlayGame {
             } else {
                 // 重新获取期次信息
                 getCurrentIssueInfo();
-            }
+            }*/
         } else {
             // 提示：需要选择一注
             PromptManager.showToast(context, "需要选择一注");

@@ -270,9 +270,14 @@ public class MiddleManager extends Observable {
                 BaseUI targetUI = VIEWCACHE.get(first);
 
                 //切换界面的核心方法
+
+                targetUI.onPause();
+
                 middle.removeAllViews();
                 middle.addView(targetUI.getChild());
                 currentUI = targetUI;
+
+                currentUI.onResume();
 
                 changeTitleAndBottom();
 
