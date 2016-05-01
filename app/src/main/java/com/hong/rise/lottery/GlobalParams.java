@@ -24,4 +24,9 @@ public class GlobalParams {
      */
     public static boolean isLogin=false;
 
+    /**
+     * 用户名
+     */
+    public static String USERNAME="";
+
 }
