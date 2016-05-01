@@ -288,4 +288,8 @@ public class MiddleManager extends Observable {
 
         return false;
     }
+
+    public void clear() {
+        HISTOYR.clear();
+    }
 }
