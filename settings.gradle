@@ -1,1 +1,1 @@
-include ':app', ':CloudDemo', ':testmeminfodemo', ':library', ':dbdemo', ':lib_test'
+include ':app', ':CloudDemo', ':testmeminfodemo', ':library', ':dbdemo', ':lib_test', ':volley'
