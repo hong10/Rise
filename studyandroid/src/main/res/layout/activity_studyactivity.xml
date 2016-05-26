@@ -10,4 +10,10 @@
         android:onClick="transferData"
         android:text="activity之间传递数据" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startSystemApp"
+        android:text="隐士意图" />
+
 </LinearLayout>
