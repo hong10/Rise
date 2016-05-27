@@ -31,4 +31,9 @@ public class StudyActivity extends Activity {
         startActivity(intent);
     }
 
+    public void lifeCycle(View view) {
+        Intent intent = new Intent(this, LifeCycle.class);
+        startActivity(intent);
+    }
+
 }
