@@ -48,7 +48,12 @@ public class MainActivity extends Activity {
     }
 
     public void lotteryDemo(View view) {
-        Intent intent = new Intent(this,LotteryLaunchActivity.class);
+        Intent intent = new Intent(this, LotteryLaunchActivity.class);
+        startActivity(intent);
+    }
+
+    public void vpnDemo(View view) {
+        Intent intent = new Intent(this, VpnDemoActivity.class);
         startActivity(intent);
     }
 

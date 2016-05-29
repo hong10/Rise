@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.hong.rise"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -39,7 +39,15 @@ android {
     }
 }
 
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+
 dependencies {
+    compile(name: 'VpnUnlimitedSDK', ext: 'aar')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile project(':library')
@@ -49,5 +57,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:design:22.2.1'
     compile 'com.android.support:support-v4:22.2.1'
-//    compile 'com.android.support:support-v4:23.1.0'
+    //    compile 'com.android.support:support-v4:23.1.0'
+    compile files('libs/volley.jar')
 }
