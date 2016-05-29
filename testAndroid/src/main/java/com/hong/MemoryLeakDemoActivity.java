@@ -1,4 +1,4 @@
-package com.hong.testmeminfodemo;
+package com.hong;
 
 import android.content.Context;
 import android.os.Bundle;
