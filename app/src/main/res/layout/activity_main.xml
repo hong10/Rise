@@ -57,6 +57,12 @@
             android:onClick="lotteryDemo"
             android:text="手机彩票" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setVpn"
+            android:text="VPN"/>
+
 
         <Button
             android:layout_width="wrap_content"

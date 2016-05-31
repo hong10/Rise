@@ -56,4 +56,10 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, VpnDemoActivity.class);
         startActivity(intent);
     }
+
+    public void setVpn(View view) {
+        Intent intent = new Intent(this,VpnActivity.class);
+        startActivity(intent);
+
+    }
 }
