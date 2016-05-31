@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hong.studyandroid">
 
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +25,28 @@
         <activity android:name=".TransferActivityA" />
         <activity android:name=".ActivityB" />
         <activity android:name=".LifeCycle" />
+
+        <receiver android:name="com.hong.broadcast.CommonBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.hong.common.broadcast"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.hong.broadcast.OrderBroadcastReceiver1">
+
+            <intent-filter android:priority="1000">
+                <action android:name="com.hong.order.broadcast"></action>
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name="com.hong.broadcast.OrderBroadcastReceiver2">
+            <intent-filter>
+                <action android:name="com.hong.order.broadcast"></action>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.hong.service.BlockSmsAndCallService"></service>
     </application>
 
 </manifest>
