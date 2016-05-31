@@ -33,5 +33,11 @@
         android:onClick="blockSmsAndCall"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:text="handlerDemo"
+        android:onClick="handlerDemo"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

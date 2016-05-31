@@ -25,6 +25,7 @@
         <activity android:name=".TransferActivityA" />
         <activity android:name=".ActivityB" />
         <activity android:name=".LifeCycle" />
+        <activity android:name=".HandlerDemoActivity" />
 
         <receiver android:name="com.hong.broadcast.CommonBroadcastReceiver">
             <intent-filter>

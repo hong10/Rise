@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
         intent.setAction("com.hong.order.broadcast");
 
         Bundle bundle = new Bundle();
-        bundle.putString("a","aaa");
+        bundle.putString("a", "aaa");
         intent.putExtras(bundle);
         sendOrderedBroadcast(intent, null);
     }
@@ -41,5 +41,11 @@ public class MainActivity extends Activity {
     public void blockSmsAndCall(View view) {
         Intent intent = new Intent(this, BlockSmsAndCallService.class);
         startService(intent);
+    }
+
+    public void handlerDemo(View view) {
+        Intent intent = new Intent(this, HandlerDemoActivity.class);
+        startActivity(intent);
+
     }
 }
