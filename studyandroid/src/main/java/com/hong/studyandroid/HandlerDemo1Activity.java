@@ -12,8 +12,8 @@ import android.widget.TextView;
 /**
  * Created by Administrator on 2016/5/31.
  */
-public class HandlerDemoActivity extends Activity {
-    private static final String TAG = HandlerDemoActivity.class.getSimpleName();
+public class HandlerDemo1Activity extends Activity {
+    private static final String TAG = HandlerDemo1Activity.class.getSimpleName();
     private ProgressBar progressBar;
     private TextView tvStatus;
     private Handler handler = new Handler() {
@@ -40,7 +40,7 @@ public class HandlerDemoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_handlerdemo);
+        setContentView(R.layout.activity_handlerdemo1);
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         tvStatus = (TextView) findViewById(R.id.tv_status);
 
@@ -49,6 +49,8 @@ public class HandlerDemoActivity extends Activity {
 
 
     }
+
+
 
     public void checkUpdate(View view) {
         //show progressBar
@@ -88,5 +90,7 @@ public class HandlerDemoActivity extends Activity {
 
         }
     };
+
+
 
 }

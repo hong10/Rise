@@ -35,8 +35,14 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:text="handlerDemo"
-        android:onClick="handlerDemo"
+        android:text="handlerDemo1"
+        android:onClick="handlerDemo1"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="handlerDemo2"
+        android:onClick="handlerDemo2"
         android:layout_height="wrap_content" />
 
 

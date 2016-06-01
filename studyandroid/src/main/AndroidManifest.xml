@@ -25,7 +25,8 @@
         <activity android:name=".TransferActivityA" />
         <activity android:name=".ActivityB" />
         <activity android:name=".LifeCycle" />
-        <activity android:name=".HandlerDemoActivity" />
+        <activity android:name=".HandlerDemo1Activity" />
+        <activity android:name=".HandlerDemo2Activity" />
 
         <receiver android:name="com.hong.broadcast.CommonBroadcastReceiver">
             <intent-filter>

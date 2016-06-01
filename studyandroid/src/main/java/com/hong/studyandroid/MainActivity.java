@@ -43,9 +43,14 @@ public class MainActivity extends Activity {
         startService(intent);
     }
 
-    public void handlerDemo(View view) {
-        Intent intent = new Intent(this, HandlerDemoActivity.class);
+    public void handlerDemo1(View view) {
+        Intent intent = new Intent(this, HandlerDemo1Activity.class);
         startActivity(intent);
-
     }
+
+    public void handlerDemo2(View view) {
+        Intent intent = new Intent(this, HandlerDemo2Activity.class);
+        startActivity(intent);
+    }
+
 }
