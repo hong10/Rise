@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -27,6 +28,8 @@
         <activity android:name=".LifeCycle" />
         <activity android:name=".HandlerDemo1Activity" />
         <activity android:name=".HandlerDemo2Activity" />
+        <activity android:name=".VolleyDemoActivity" />
+        <activity android:name=".MockLoginByVolleyActivity" />
 
         <receiver android:name="com.hong.broadcast.CommonBroadcastReceiver">
             <intent-filter>

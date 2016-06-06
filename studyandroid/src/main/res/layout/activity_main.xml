@@ -11,39 +11,50 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:text="studyActivity"
+        android:layout_height="wrap_content"
         android:onClick="studyActivity"
-        android:layout_height="wrap_content" />
+        android:text="studyActivity" />
 
     <Button
         android:layout_width="wrap_content"
-        android:text="sendBroadcast"
+        android:layout_height="wrap_content"
         android:onClick="sendBroadcast"
-        android:layout_height="wrap_content" />
+        android:text="sendBroadcast" />
 
     <Button
         android:layout_width="wrap_content"
-        android:text="sendOrderBroadcast"
+        android:layout_height="wrap_content"
         android:onClick="sendOrderBroadcast"
-        android:layout_height="wrap_content" />
+        android:text="sendOrderBroadcast" />
 
     <Button
         android:layout_width="wrap_content"
-        android:text="blockSmsAndCall"
+        android:layout_height="wrap_content"
         android:onClick="blockSmsAndCall"
-        android:layout_height="wrap_content" />
+        android:text="blockSmsAndCall" />
 
     <Button
         android:layout_width="wrap_content"
-        android:text="handlerDemo1"
+        android:layout_height="wrap_content"
         android:onClick="handlerDemo1"
-        android:layout_height="wrap_content" />
+        android:text="handlerDemo1" />
 
     <Button
         android:layout_width="wrap_content"
-        android:text="handlerDemo2"
+        android:layout_height="wrap_content"
         android:onClick="handlerDemo2"
-        android:layout_height="wrap_content" />
+        android:text="handlerDemo2" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volleyDemo"
+        android:text="volleyDemo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mockLoginByVolley"
+        android:text="mockLoginByVolley" />
 
 </LinearLayout>

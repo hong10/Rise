@@ -53,4 +53,15 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+
+    public void volleyDemo(View view) {
+        Intent intent = new Intent(this, VolleyDemoActivity.class);
+        startActivity(intent);
+    }
+
+    public void mockLoginByVolley(View view) {
+        Intent intent = new Intent(this, MockLoginByVolleyActivity.class);
+        startActivity(intent);
+    }
+
 }
