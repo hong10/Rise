@@ -22,4 +22,21 @@
         android:layout_height="wrap_content"
         android:text="login" />
 
+    <Button
+        android:id="@+id/bt_load_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loadImage" />
+
+    <Button
+        android:id="@+id/bt_stop_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stopLoadImage" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
