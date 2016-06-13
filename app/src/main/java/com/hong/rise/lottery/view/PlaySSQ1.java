@@ -220,8 +220,12 @@ public class PlaySSQ1 extends BaseUI {
         redAdapter.notifyDataSetChanged();
         blueAdapter.notifyDataSetChanged();
 
-//        changeNotice();
+        changeNotice();
 
+    }
+
+    private void changeNotice() {
+        BottomManager
     }
 
     @Override
