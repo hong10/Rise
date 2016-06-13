@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.hong.rise.R;
 import com.hong.rise.lottery.ConstantValue;
+import com.hong.rise.lottery.GlobalParams;
 import com.hong.rise.lottery.view.SecondUI;
 
 import org.apache.commons.lang3.StringUtils;
@@ -21,7 +22,7 @@ import java.util.Observer;
  *
  * @author Administrator
  */
-public class TitleManager implements Observer{
+public class TitleManager implements Observer {
     // 显示和隐藏
 
     private static TitleManager instance = null;
@@ -137,18 +138,31 @@ public class TitleManager implements Observer{
         if (data != null && StringUtils.isNumeric(data.toString())) {
             int id = Integer.parseInt(data.toString());
             switch (id) {
-                case ConstantValue.VIEW_HALL:
-                    showUnLoginTitle();
-                    break;
                 case ConstantValue.FRIST_VIEW:
 //                    showUnLoginTitle();
                     break;
                 case ConstantValue.SECOND_VIEW:
                     showCommonTitle();
                     break;
+
+
                 case ConstantValue.VIEW_SSQ:
+                case ConstantValue.VIEW_SHOPPING:
+                case ConstantValue.VIEW_LOGIN:
+                case ConstantValue.VIEW_PREBET:
                     showCommonTitle();
                     break;
+
+                case ConstantValue.VIEW_HALL:
+                    if (GlobalParams.isLogin) {
+                        showLoginTitle();
+                        String info = "用户名：" + GlobalParams.USERNAME + "\r\n" + "余额:" + GlobalParams.MONEY;
+                        userInfo.setText(info);
+                    } else {
+                        showUnLoginTitle();
+                    }
+                    break;
+
             }
         }
 

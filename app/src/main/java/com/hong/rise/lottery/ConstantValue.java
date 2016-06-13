@@ -52,4 +52,8 @@ public interface ConstantValue {
      * 服务器返回成功状态码
      */
     String SUCCESS="0";
+    /**
+     * 用户登录
+     */
+    int VIEW_LOGIN=30;
 }

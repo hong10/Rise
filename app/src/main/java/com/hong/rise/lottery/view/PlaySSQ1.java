@@ -3,6 +3,7 @@ package com.hong.rise.lottery.view;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -13,10 +14,22 @@ import android.widget.GridView;
 import com.hong.rise.R;
 import com.hong.rise.lottery.Adapter.PoolAdapter;
 import com.hong.rise.lottery.ConstantValue;
+import com.hong.rise.lottery.bean.ShoppingCart;
+import com.hong.rise.lottery.bean.Ticket;
+import com.hong.rise.lottery.engine.CommonInfoEngine;
+import com.hong.rise.lottery.net.protocal.Message;
+import com.hong.rise.lottery.net.protocal.Oelement;
+import com.hong.rise.lottery.net.protocal.element.CurrentIssueElement;
 import com.hong.rise.lottery.view.listener.ShakeListener;
 import com.hong.rise.lottery.view.manager.BaseUI;
+import com.hong.rise.lottery.view.manager.BottomManager;
+import com.hong.rise.lottery.view.manager.MiddleManager;
+import com.hong.rise.lottery.view.manager.PlayGame;
 import com.hong.rise.lottery.view.manager.TitleManager;
+import com.hong.rise.utils.BeanFactory;
+import com.hong.rise.utils.PromptManager;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -24,7 +37,7 @@ import java.util.Random;
 /**
  * Created by hong on 2016/4/26.
  */
-public class PlaySSQ1 extends BaseUI {
+public class PlaySSQ1 extends BaseUI implements PlayGame {
 
     // 通用三步
 
@@ -117,6 +130,8 @@ public class PlaySSQ1 extends BaseUI {
                     redNums.remove((Object) (position + 1));//redNums.remove(int),这个代码的意思是，移出第一个位置上的元素，会报出越界的异常
                 }
 
+                changeNotice();
+
             }
         });
 
@@ -137,6 +152,8 @@ public class PlaySSQ1 extends BaseUI {
                     view.setBackgroundResource(R.drawable.id_defalut_ball);
                     blueNums.remove((Object) (position + 1));//redNums.remove(int),这个代码的意思是，移出第一个位置上的元素，会报出越界的异常
                 }
+
+                changeNotice();
             }
         });
 
@@ -165,6 +182,8 @@ public class PlaySSQ1 extends BaseUI {
                 //通知刷新界面
                 redAdapter.notifyDataSetChanged();
 
+                changeNotice();
+
                 break;
             case R.id.ii_ssq_random_blue:
                 blueNums.clear();
@@ -173,6 +192,8 @@ public class PlaySSQ1 extends BaseUI {
 
                 //通知刷新界面
                 blueAdapter.notifyDataSetChanged();
+
+                changeNotice();
                 break;
         }
     }
@@ -180,8 +201,10 @@ public class PlaySSQ1 extends BaseUI {
     @Override
     public void onResume() {
         changeTitle();
+        changeNotice();
+        clear();
 
-        listener = new ShakeListener(context){
+        listener = new ShakeListener(context) {
 
             @Override
             public void randomCure() {
@@ -222,6 +245,55 @@ public class PlaySSQ1 extends BaseUI {
 
         changeNotice();
 
+
+    }
+
+    private void changeNotice() {
+
+        String notice = "";
+        //以一注为分割
+        if (redNums.size() < 6) {
+            notice = "您还需要选择" + (6 - redNums.size()) + "个红球";
+        } else if (blueNums.size() == 0) {
+            notice = "您还需要选择" + 1 + "个蓝球";
+        } else {
+            notice = "共 " + calc() + " 注 " + calc() * 2 + " 元";
+        }
+
+
+        BottomManager.getInstrance().changeGameBottomNotice(notice);
+
+    }
+
+
+    /**
+     * 计算注数
+     *
+     * @return
+     */
+    private int calc() {
+        int redC = (int) (factorial(redNums.size()) / (factorial(6) * factorial(redNums.size() - 6)));
+        int blueC = blueNums.size();
+        return redC * blueC;
+    }
+
+    /**
+     * 计算一个数的阶乘
+     *
+     * @param num
+     * @return
+     */
+    private long factorial(int num) {
+        // num=7 7*6*5...*1
+
+
+        if (num > 1) {
+            return num * factorial(num - 1);
+        } else if (num == 1 || num == 0) {
+            return 1;
+        } else {
+            throw new IllegalArgumentException("num >= 0");
+        }
     }
 
     private void changeNotice() {
@@ -254,4 +326,146 @@ public class PlaySSQ1 extends BaseUI {
 
         TitleManager.getInstance().changeTitle(titleInfo);
     }
+
+    /**
+     * 清空
+     */
+    @Override
+    public void clear() {
+        redNums.clear();
+        blueNums.clear();
+        changeNotice();
+
+        redAdapter.notifyDataSetChanged();
+        blueAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void done() {
+        // ①判断：用户是否选择了一注投注
+        if (redNums.size() >= 6 && blueNums.size() >= 1) {
+            // 一个购物车中，只能放置一个彩种，当前期的投注信息
+            // ②判断：是否获取到了当前销售期的信息
+
+            //*************调试代码**********
+
+
+             // ③封装用户的投注信息：红球、蓝球、注数
+            Ticket ticket = new Ticket();
+            DecimalFormat decimalFormat = new DecimalFormat("00");
+            StringBuffer redBuffer = new StringBuffer();
+            for (Integer item : redNums) {
+                // redBuffer.append(decimalFormat.format(item)).append(" ");
+                redBuffer.append(" ").append(decimalFormat.format(item));
+            }
+            ticket.setRedNum(redBuffer.substring(1));
+
+            StringBuffer blueBuffer = new StringBuffer();
+            for (Integer item : blueNums) {
+                blueBuffer.append(" ").append(decimalFormat.format(item));
+            }
+
+            ticket.setBlueNum(blueBuffer.substring(1));
+
+            ticket.setNum(calc());
+
+            // ④创建彩票购物车，将投注信息添加到购物车中
+            ShoppingCart.getInstance().getTickets().add(ticket);
+            // ⑤设置彩种的标示，设置彩种期次
+//            ShoppingCart.getInstance().setIssue(bundle.getString("issue"));
+            ShoppingCart.getInstance().setLotteryid(ConstantValue.SSQ);
+
+            // ⑥界面跳转——购物车展示
+            MiddleManager.getInstance().changeUI(Shopping.class, bundle);
+
+            //****************************
+
+
+
+
+            //一些这段代码是真正和服务器交互时的代码，实际写代码时，服务器无法调通，所以对bundle没有进行null判断，以确保可以调试
+            /*if (bundle != null) {
+                // ③封装用户的投注信息：红球、蓝球、注数
+                Ticket ticket = new Ticket();
+                DecimalFormat decimalFormat = new DecimalFormat("00");
+                StringBuffer redBuffer = new StringBuffer();
+                for (Integer item : redNums) {
+                    // redBuffer.append(decimalFormat.format(item)).append(" ");
+                    redBuffer.append(" ").append(decimalFormat.format(item));
+                }
+                ticket.setRedNum(redBuffer.substring(1));
+
+                StringBuffer blueBuffer = new StringBuffer();
+                for (Integer item : blueNums) {
+                    blueBuffer.append(" ").append(decimalFormat.format(item));
+                }
+
+                ticket.setBlueNum(blueBuffer.substring(1));
+
+                ticket.setNum(calc());
+
+                // ④创建彩票购物车，将投注信息添加到购物车中
+                ShoppingCart.getInstance().getTickets().add(ticket);
+                // ⑤设置彩种的标示，设置彩种期次
+                ShoppingCart.getInstance().setIssue(bundle.getString("issue"));
+                ShoppingCart.getInstance().setLotteryid(ConstantValue.SSQ);
+
+                // ⑥界面跳转——购物车展示
+                MiddleManager.getInstance().changeUI(Shopping.class, bundle);
+
+            } else {
+                // 重新获取期次信息
+                getCurrentIssueInfo();
+            }*/
+        } else {
+            // 提示：需要选择一注
+            PromptManager.showToast(context, "需要选择一注");
+        }
+
+        // 分支（显示提示）
+
+    }
+
+    private void getCurrentIssueInfo() {
+        new MyHttpTask<Integer>() {
+            protected void onPreExecute() {
+                // 显示滚动条
+                PromptManager.showProgressDialog(context);
+            }
+
+            @Override
+            protected Message doInBackground(Integer... params) {
+                // 获取数据——业务的调用
+                CommonInfoEngine engine = BeanFactory.getImpl(CommonInfoEngine.class);
+                return engine.getCurrentIssueInfo(params[0]);
+            }
+
+            @Override
+            protected void onPostExecute(Message result) {
+                PromptManager.closeProgressDialog();
+                // 更新界面
+                if (result != null) {
+                    Oelement oelement = result.getBody().getOelement();
+
+                    if (ConstantValue.SUCCESS.equals(oelement.getErrorcode())) {
+                        CurrentIssueElement element = (CurrentIssueElement) result.getBody().getElements().get(0);
+                        // 创建bundle
+                        bundle = new Bundle();
+                        bundle.putString("issue", element.getIssue());
+
+                        changeTitle();
+                    } else {
+                        PromptManager.showToast(context, oelement.getErrormsg());
+                    }
+                } else {
+                    // 可能：网络不通、权限、服务器出错、非法数据……
+                    // 如何提示用户
+                    PromptManager.showToast(context, "服务器忙，请稍后重试……");
+                }
+
+                super.onPostExecute(result);
+            }
+        }.executeProxy(ConstantValue.SSQ);
+    }
+
 }

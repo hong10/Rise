@@ -14,4 +14,19 @@ public class GlobalParams {
      */
     public static int WIN_WIDTH=0;
 
+    /**
+     * 用户的余额
+     */
+    public static Float MONEY=0f;
+
+    /**
+     * 记录用户的登录状态
+     */
+    public static boolean isLogin=false;
+
+    /**
+     * 用户名
+     */
+    public static String USERNAME="";
+
 }
