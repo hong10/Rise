@@ -64,5 +64,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void testPreference(View view) {
+        Intent intent = new Intent(this, TestPreferenceActivity.class);
+        startActivity(intent);
+    }
 
 }

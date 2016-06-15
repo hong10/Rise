@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries">
+        <item>aa</item>
+        <item>bb</item>
+        <item>cc</item>
+    </string-array>
+
+    <string-array name="entryValues">
+        <item>AA</item>
+        <item>BB</item>
+        <item>CC</item>
+    </string-array>
+
+</resources>

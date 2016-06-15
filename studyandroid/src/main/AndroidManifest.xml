@@ -30,6 +30,9 @@
         <activity android:name=".HandlerDemo2Activity" />
         <activity android:name=".VolleyDemoActivity" />
         <activity android:name=".MockLoginByVolleyActivity" />
+        <activity
+            android:name=".TestPreferenceActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
 
         <receiver android:name="com.hong.broadcast.CommonBroadcastReceiver">
             <intent-filter>

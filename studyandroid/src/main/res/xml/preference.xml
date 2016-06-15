@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBoxPreference
+            android:key="check1"
+            android:summary="aaaaaa"
+            android:title="music" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="autoBack"
+            android:summaryOff="off"
+            android:summaryOn="on"
+            android:title="auto reply" />
+
+    <PreferenceCategory android:title="SMS 助手">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="smsSilence"
+            android:summaryOff="off"
+            android:summaryOn="on"
+            android:title="静音" />
+
+        <PreferenceScreen android:title="更多选项">
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="cb21"
+                android:summaryOff="off"
+                android:summaryOn="on"
+                android:title="功能1" />
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="cb22"
+                android:summaryOff="off"
+                android:summaryOn="on"
+                android:title="功能2" />
+
+            <ListPreference
+                android:dialogTitle="请选择论坛"
+                android:entries="@array/entries"
+                android:entryValues="@array/entryValues"
+                android:key="list1"
+                android:summary="开发论坛"
+                android:title="android forum" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="其他选项">
+        <RingtonePreference
+            android:key="rt1"
+            android:summary="选择铃声"
+            android:title="RingtonePreference Sample" />
+
+        <Preference
+            android:key="aa"
+            android:summary="testing"
+            android:title="test" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
