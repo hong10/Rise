@@ -1,63 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        style="@android:style/Theme.NoTitleBar.Fullscreen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".MainActivity">
+    <LinearLayout style="@android:style/Theme.NoTitleBar.Fullscreen"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:paddingBottom="@dimen/activity_vertical_margin"
+                  android:paddingLeft="@dimen/activity_horizontal_margin"
+                  android:paddingRight="@dimen/activity_horizontal_margin"
+                  android:paddingTop="@dimen/activity_vertical_margin"
+                  tools:context=".MainActivity">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="showBaseImage"
-            android:text="图片基本显示" />
+            android:text="图片基本显示"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="rotateImage"
-            android:text="缩放旋转图片" />
+            android:text="缩放旋转图片"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="netImage"
-            android:text="网络加载图片" />
+            android:text="网络加载图片"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="fakeNetEasyNewsClient"
-            android:text="仿网易新闻客户端" />
+            android:text="仿网易新闻客户端"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="loadImageDemo"
-            android:text="加载图片示例" />
+            android:text="加载图片示例"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="fragmentDemo"
-            android:text="fragmentDemo" />
+            android:text="fragmentDemo"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="lotteryDemo"
-            android:text="手机彩票" />
+            android:text="手机彩票"/>
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notification"
+            android:text="notificationDemo"/>
+
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="setVpn"
@@ -68,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="vpnDemo"
-            android:text="vpnDemo" />
+            android:text="vpnDemo" />-->
 
 
     </LinearLayout>

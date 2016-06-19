@@ -296,9 +296,9 @@ public class PlaySSQ1 extends BaseUI implements PlayGame {
         }
     }
 
-    private void changeNotice() {
+    /*private void changeNotice() {
         BottomManager
-    }
+    }*/
 
     @Override
     public void onPause() {
