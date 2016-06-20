@@ -3,7 +3,6 @@ package com.hong.rise.utils;
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
-import java.util.Objects;
 
 /**
  * 软引用的map集合
@@ -87,11 +86,11 @@ public class SoftMap<K, V> extends HashMap<K, V> {
      * @author Administrator
      */
     private class SoftValue<K, V> extends SoftReference<V> {
-        private Objects key;
+        private Object key;
 
         public SoftValue(K key, V r, ReferenceQueue<? super V> q) {
             super(r, q);
-            this.key = (Objects) key;
+            this.key = (Object) key;
         }
     }
 
