@@ -74,4 +74,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void baseRecorder(View view) {
+        Intent intent = new Intent(this, BaseRecorderActivity.class);
+        startActivity(intent);
+    }
+
 }
