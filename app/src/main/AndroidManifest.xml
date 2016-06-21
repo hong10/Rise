@@ -49,6 +49,7 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".NotificationDemoActivity"/>
+        <activity android:name=".SdSizeActivity" />
     </application>
 
 </manifest>

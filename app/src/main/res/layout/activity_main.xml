@@ -57,11 +57,7 @@
             android:onClick="lotteryDemo"
             android:text="手机彩票"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="notification"
-            android:text="notificationDemo"/>
+
 
         <!--<Button
             android:layout_width="wrap_content"
@@ -75,6 +71,18 @@
             android:layout_height="wrap_content"
             android:onClick="vpnDemo"
             android:text="vpnDemo" />-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notification"
+            android:text="notificationDemo"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="SDSize"
+            android:text="sd size"/>
 
 
     </LinearLayout>

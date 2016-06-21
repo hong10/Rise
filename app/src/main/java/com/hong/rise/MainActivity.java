@@ -68,4 +68,10 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, NotificationDemoActivity.class);
         startActivity(intent);
     }
+
+    public void SDSize(View view) {
+        Intent intent = new Intent(this, SdSizeActivity.class);
+        startActivity(intent);
+    }
+
 }

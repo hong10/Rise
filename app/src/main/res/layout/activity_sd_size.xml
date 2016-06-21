@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_sd_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getSdTotalSize" />
+
+    <TextView
+        android:id="@+id/tv_sd_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd total: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_sd_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getSdAvailSize" />
+
+    <TextView
+        android:id="@+id/tv_sd_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sd avail: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_rom_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getRomTotalSize" />
+
+    <TextView
+        android:id="@+id/tv_rom_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rom total: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_rom_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getRomAvailSize" />
+
+    <TextView
+        android:id="@+id/tv_rom_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rom avail: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/bt_data_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getDataTotalSize" />
+
+    <TextView
+        android:id="@+id/tv_data_total_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data total: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/bt_data_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSize"
+        android:text="getDataAvailSize" />
+
+    <TextView
+        android:id="@+id/tv_data_avail_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data avail: "
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
