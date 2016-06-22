@@ -79,4 +79,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void visualizerDemo(View view) {
+        Intent intent = new Intent(this, VisualizerDemoActivity.class);
+        startActivity(intent);
+    }
+
 }

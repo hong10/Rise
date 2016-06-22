@@ -52,6 +52,7 @@
         <activity android:name=".NotificationDemoActivity"/>
         <activity android:name=".SdSizeActivity" />
         <activity android:name=".BaseRecorderActivity" />
+        <activity android:name=".VisualizerDemoActivity" />
     </application>
 
 </manifest>
