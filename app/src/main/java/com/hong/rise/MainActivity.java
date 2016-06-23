@@ -84,4 +84,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void sinWave(View view) {
+        Intent intent = new Intent(this, SinWaveDemoActivity.class);
+        startActivity(intent);
+    }
+
 }

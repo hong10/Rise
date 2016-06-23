@@ -95,6 +95,12 @@
             android:onClick="visualizerDemo"
             android:text="visualizerDemo" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sinWave"
+            android:text="sinWaveDemo" />
+
 
     </LinearLayout>
 

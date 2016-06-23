@@ -1,6 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="频率:"
+
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/frequency"
+
+            android:layout_width="75dip"
+
+            android:layout_height="wrap_content"
+
+            android:text="3"
+
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="赫兹"
+
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="相位:"
+
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/phase"
+
+            android:layout_width="75dip"
+
+            android:layout_height="wrap_content"
+
+            android:text="30.0"
+
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="度"
+
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="幅值:"
+
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/amplifier"
+
+            android:layout_width="75dip"
+
+            android:layout_height="wrap_content"
+
+            android:text="100"
+
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="单位"
+
+            android:textSize="20sp" />
+
+        <Button
+
+            android:id="@+id/wave"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="产生波形"
+
+            android:textSize="20sp" />"
+
+    </LinearLayout>
+
+    <com.hong.rise.view.SineWave
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+    </com.hong.rise.view.SineWave>
+
 
 </LinearLayout>
