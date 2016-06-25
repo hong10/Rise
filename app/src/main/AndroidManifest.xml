@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hong.rise">
+<manifest package="com.hong.rise"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:name=".MyApplication"
@@ -17,42 +17,45 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ShowBaseImageActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".RotateImageActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".LoadPicFromNetActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".FakeNetEasyNewsActivity"
             android:label="Tabs/Styled"
-            android:theme="@style/StyledIndicators" />
-        <activity android:name=".LoadImageDemo" />
+            android:theme="@style/StyledIndicators"/>
+        <activity android:name=".LoadImageDemo"/>
         <activity
             android:name=".FragmentDemoActivity"
             android:label="@string/title_activity_fragment_demo"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".FragmentStackDemoActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".LotteryLaunchActivity"
             android:label="@string/title_activity_lottery_launch"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".NotificationDemoActivity" />
-        <activity android:name=".SdSizeActivity" />
-        <activity android:name=".BaseRecorderActivity" />
-        <activity android:name=".VisualizerDemoActivity" />
-        <activity android:name=".SinWaveDemoActivity" />
+        <activity android:name=".NotificationDemoActivity"/>
+        <activity android:name=".SdSizeActivity"/>
+        <activity android:name=".BaseRecorderActivity"/>
+        <activity android:name=".VisualizerDemoActivity"/>
+        <activity android:name=".SinWaveDemoActivity"/>
+        <activity
+            android:name=".PerfectWaveDemoActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

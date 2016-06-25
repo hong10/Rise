@@ -89,4 +89,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void perfectWave(View view) {
+        Intent intent = new Intent(this, PerfectWaveDemoActivity.class);
+        startActivity(intent);
+    }
+
 }
