@@ -5,6 +5,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.audiofx.Visualizer;
 import android.os.Bundle;
+import android.view.View;
 
 import com.hong.rise.view.VisualizerView;
 
@@ -24,7 +25,7 @@ public class VisualizerDemoActivity extends Activity {
         setContentView(R.layout.activity_visualizer_demo);
         mVisualizerView = (VisualizerView) findViewById(R.id.myvisualizerview);
 
-        initAudio();
+//        initAudio();
     }
 
     @Override
@@ -37,7 +38,7 @@ public class VisualizerDemoActivity extends Activity {
         }
     }
 
-    private void initAudio() {
+    public void initAudio(View view) {
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
         mMediaPlayer = MediaPlayer.create(this, R.raw.test);
 
