@@ -56,6 +56,12 @@ public class SinWaveDemoActivity extends Activity {
 
                     sw.Set(a, f, p);
 
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                     handler.post(runnable);
                     break;
                 case 1:
