@@ -94,4 +94,9 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void getVolumeDemo(View view) {
+        Intent intent = new Intent(this, GetVolumeDemoActivity.class);
+        startActivity(intent);
+    }
+
 }
