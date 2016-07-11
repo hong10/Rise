@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -13,7 +12,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        setContentView(R.layout.activity_meminfo_test);
+//        setContentView(R.layout.activity_memory_leak_demo);
     }
+
 
     public void testService(View view) {
 
@@ -38,30 +40,13 @@ public class MainActivity extends Activity {
      * @param view
      */
     public void testMemoryLeak(View view) {
-        Toast.makeText(this, "待补充", Toast.LENGTH_LONG).show();
-//        EditText etNum = (EditText) findViewById(R.id.et_num);
-//        Intent intent = new Intent(this, MemoryLeakDemoActivity.class);
-//        if (!TextUtils.isEmpty(etNum.getText().toString().trim())) {
-//
-//            intent.putExtra("num", etNum.getText().toString().trim());
-//            startActivity(intent);
-//        }else {
-//            Toast.makeText(this, "请输入系数", Toast.LENGTH_SHORT).show();
-//        }
-    }
 
-    /**
-     * memory out demo
-     *
-     * @param view
-     */
-    public void memoryOut(View view) {
-        /*ArrayList<String> list = new ArrayList<String>();
-        while (true)
-            list.add("a");*/
-        byte[] i = new byte[90 * 1024 * 1024];
+        Intent intent = new Intent(this, MemoryInfoActivity.class);
+        startActivity(intent);
 
     }
+
+
 
 
 }

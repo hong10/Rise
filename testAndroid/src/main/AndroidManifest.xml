@@ -19,6 +19,7 @@
         <activity
             android:name="com.hong.MemoryLeakDemoActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name=".MemoryInfoActivity"/>
 
         <activity
             android:name="com.hong.TestServiceActivity"
