@@ -13,6 +13,12 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
+    public void jniDemo(View view) {
+        Intent intent = new Intent(this, JniDemoActivity.class);
+        startActivity(intent);
+    }
+
+
     public void showBaseImage(View view) {
         Intent intent = new Intent(this, ShowBaseImageActivity.class);
         startActivity(intent);
