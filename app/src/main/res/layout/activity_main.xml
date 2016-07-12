@@ -18,6 +18,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="convert"
+            android:text="wav -> mp3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="jniDemo"
             android:text="jni demo"/>
 
