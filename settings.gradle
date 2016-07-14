@@ -1,2 +1,2 @@
 //include ':app', ':CloudDemo', ':library', ':dbdemo', ':java_test', ':volley', ':studyandroid'
-include ':app', ':library',':testAndroid',':java_test'
+include ':app', ':library', ':testAndroid', ':java_test', ':mp3recordlibrary'
