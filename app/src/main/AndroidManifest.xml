@@ -60,6 +60,7 @@
         <activity
             android:name=".JniDemoActivity"
             android:screenOrientation="landscape" />
+        <activity android:name=".Mp3RecorderDemoActivity" />
     </application>
 
 </manifest>

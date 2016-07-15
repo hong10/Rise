@@ -13,6 +13,11 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
+    public void mp3Recorder(View view) {
+        Intent intent = new Intent(this, Mp3RecorderDemoActivity.class);
+        startActivity(intent);
+    }
+
     public void jniDemo(View view) {
         Intent intent = new Intent(this, JniDemoActivity.class);
         startActivity(intent);

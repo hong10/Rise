@@ -39,3 +39,5 @@ local.properties
 *.swp
 
 /app/src/main/obj/
+/mp3recordlibrary/src/main/obj/
+/mp3recordlibrary/src/main/libs/
