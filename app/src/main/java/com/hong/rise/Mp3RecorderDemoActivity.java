@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hong.mp3record.MP3Recorder;
+import com.hong.rise.view.VoiceLineView;
 import com.hong.rise.view.VolumeWaveHelper;
 import com.hong.rise.view.VolumeWaveView;
 
@@ -26,8 +27,9 @@ public class Mp3RecorderDemoActivity extends Activity {
     private VolumeWaveView waveView;
     private Button start, stop;
     private MP3Recorder mRecorder = new MP3Recorder(new File(Environment.getExternalStorageDirectory(), "test.mp3"));
-    private int SPACE = 1500;// 间隔取样时间
+    private int SPACE = 100;// 间隔取样时间
     private int volume = 2;//默认音量为2
+    private VoiceLineView voiceLineView;
 
     private int dbf; // wave view显示需要的振幅
 
@@ -36,14 +38,22 @@ public class Mp3RecorderDemoActivity extends Activity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
 
-            if (msg != null) {
-                dbf =  msg.what;
+            dbf = msg.what;
 
-                Log.i(TAG, "dbf: " + dbf);
+            float ratio = (float) dbf / 100;
+//            Log.i(TAG, "ratio: " + dbf);
 
-                helper = new VolumeWaveHelper(waveView, 0f, 1f, 0.5f, 0.5f, dbf / 500 + 0.05f, dbf / 800 + 0.05f);
-                helper.start();
-            }
+//            System.out.println("ratio: "+ratio);
+
+            double db = 0;// 分贝
+            if (ratio > 1)
+                db = 30 * Math.log10(dbf);
+            voiceLineView.setVolume((int) (db));
+
+            Log.i(TAG, "db: " + db);
+
+//            helper = new VolumeWaveHelper(waveView, 0f, 1f, 0.5f, 0.5f, 0.01f, dbf / 1500 + 0.05f);
+//            helper.start();
 
         }
     };
@@ -61,6 +71,8 @@ public class Mp3RecorderDemoActivity extends Activity {
             Message msg = Message.obtain();
             msg.what = volume;
             handler.sendMessage(msg);
+
+
         }
     };
 
@@ -70,7 +82,10 @@ public class Mp3RecorderDemoActivity extends Activity {
 
         setContentView(R.layout.activity_mp3_recorder);
 
-        waveView = (VolumeWaveView) findViewById(R.id.mp3_recorder_volume_wave);
+//        waveView = (VolumeWaveView) findViewById(R.id.mp3_recorder_volume_wave);
+        voiceLineView = (VoiceLineView) findViewById(R.id.mp3_recorder_volume_wave);
+        voiceLineView.start();
+
         start = (Button) findViewById(R.id.mp3_recorder_start);
         stop = (Button) findViewById(R.id.mp3_recorder_stop);
 

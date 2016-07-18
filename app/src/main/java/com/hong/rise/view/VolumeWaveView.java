@@ -258,7 +258,7 @@ public class VolumeWaveView extends View {
 //            canvas.drawLine(beginX, beginY, beginX, endY, wavePaint);//这句代码的是绘制有水面的曲线
 
             //下面这句代码是绘制一条波浪曲线的
-            canvas.drawLine(beginX, beginY, beginX, (float) ((mDefaultWaterLevel + mDefaultAmplitude * Math.sin(wx)) + 0.5), wavePaint);
+            canvas.drawLine(beginX, beginY, beginX, (float) ((mDefaultWaterLevel + mDefaultAmplitude * Math.sin(wx)) + 1), wavePaint);
             //(float) ((mDefaultWaterLevel + mDefaultAmplitude * Math.sin(wx))+1),最后这个加一，可以控制线条的粗细
 
 //            Log.i("WaveView", "Behind wx: " + wx);
@@ -282,7 +282,7 @@ public class VolumeWaveView extends View {
         final int wave2Shift = (int) (mDefaultWaveLength / 4);
         for (int beginX = 0; beginX < endX; beginX++) {
 //            canvas.drawLine(beginX, waveY[(beginX + wave2Shift) % endX], beginX, endY, wavePaint);
-            canvas.drawLine(beginX, waveY[(beginX + wave2Shift) % endX], beginX, (float) (waveY[(beginX + wave2Shift) % endX] + 0.5), wavePaint);
+            canvas.drawLine(beginX, waveY[(beginX + wave2Shift) % endX], beginX, (float) (waveY[(beginX + wave2Shift) % endX] + 1), wavePaint);
 
 
 //            Log.i("WaveView", "Front wave2Shift: " + wave2Shift);
